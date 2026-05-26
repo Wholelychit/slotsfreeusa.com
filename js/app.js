@@ -10,19 +10,14 @@ if (menuToggle && siteNav) {
 function showLuckyLouTip(category) {
   const box = document.getElementById('lou-tip');
 
-  if (!box || !luckyLouDialog[category]) return;
+  if (!box || typeof luckyLouDialog === 'undefined' || !luckyLouDialog[category]) return;
 
   const tips = luckyLouDialog[category];
-
   const randomTip = tips[Math.floor(Math.random() * tips.length)];
 
   box.innerHTML = `
     <div class="lou-box">
-      <img
-        src="images/lucky-lou-icon.png"
-        alt="Lucky Lou"
-        class="lou-icon"
-      >
+      <div class="lou-icon" aria-hidden="true">🎰</div>
 
       <div>
         <h3>Lucky Lou Says</h3>
