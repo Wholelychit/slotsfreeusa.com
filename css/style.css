@@ -192,6 +192,40 @@ img {
   color: #facc15;
 }
 
+.lou-section {
+  background: linear-gradient(135deg, #0b1220, #1e293b);
+  border: 2px solid #facc15;
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.lou-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.lou-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #facc15;
+  background: #111827;
+}
+
+.lou-box h3 {
+  margin: 0 0 6px;
+  color: #facc15;
+}
+
+.lou-box p {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+
 .site-footer {
   background: #020617;
   padding: 40px 0;
@@ -240,5 +274,10 @@ img {
 
   .nav-wrap {
     flex-wrap: wrap;
+  }
+
+  .lou-box {
+    flex-direction: column;
+    text-align: center;
   }
 }
