@@ -1,4 +1,12 @@
+# ====================================================================
+# ROBOTS.TXT CONFIGURATION FOR SLOTSFREEUSA
+# ====================================================================
+
 User-agent: *
 Allow: /
+
+# Keep redirect paths out of search results.
+Disallow: /go/
+Disallow: /go/*
 
 Sitemap: https://slotsfreeusa.com/sitemap.xml
