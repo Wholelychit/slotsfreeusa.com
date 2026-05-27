@@ -1,0 +1,281 @@
+.vegas-stage {
+  background: radial-gradient(circle at top, rgba(250, 204, 21, 0.18), transparent 35%), linear-gradient(135deg, #06070d, #111827 42%, #020617);
+}
+
+.vegas-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 720px) minmax(260px, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.vegas-machine {
+  position: relative;
+  padding: 22px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #facc15, #b7791f 35%, #fbbf24 65%, #78350f);
+  border: 5px solid #fde68a;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55), inset 0 0 18px rgba(255, 255, 255, 0.35);
+}
+
+.vegas-machine::before,
+.vegas-machine::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  height: 12px;
+  border-radius: 999px;
+  background: repeating-linear-gradient(90deg, #ef4444 0 18px, #fde047 18px 36px);
+  box-shadow: 0 0 18px rgba(250, 204, 21, 0.75);
+}
+
+.vegas-machine::before {
+  top: -18px;
+}
+
+.vegas-machine::after {
+  bottom: -18px;
+}
+
+.vegas-topper {
+  text-align: center;
+  background: linear-gradient(180deg, #7f1d1d, #450a0a);
+  border: 3px solid #fde68a;
+  border-radius: 22px 22px 12px 12px;
+  padding: 18px 12px;
+  margin-bottom: 18px;
+  color: #fff7ed;
+  text-shadow: 0 2px 0 #111827;
+}
+
+.vegas-topper p {
+  margin: 0;
+  color: #fde68a;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.vegas-topper h2 {
+  margin: 4px 0 0;
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  line-height: 1;
+}
+
+.vegas-screen {
+  background: #111827;
+  border: 4px solid #451a03;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: inset 0 0 26px rgba(0, 0, 0, 0.75);
+}
+
+.payline-label {
+  text-align: center;
+  color: #facc15;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.vegas-reels {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #020617, #111827);
+  border: 3px solid #facc15;
+}
+
+.vegas-reels::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 50%;
+  height: 4px;
+  transform: translateY(-50%);
+  background: rgba(239, 68, 68, 0.9);
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.85);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.vegas-reel {
+  min-height: clamp(112px, 18vw, 170px);
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fff7ed, #fde68a 48%, #fef3c7);
+  border: 4px solid #92400e;
+  color: #111827;
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  box-shadow: inset 0 12px 24px rgba(255, 255, 255, 0.65), inset 0 -12px 24px rgba(120, 53, 15, 0.25);
+}
+
+.vegas-reel.spinning {
+  animation: reelShake 0.12s linear infinite;
+  filter: blur(1px);
+}
+
+.bar-symbol {
+  font-size: clamp(1.6rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+@keyframes reelShake {
+  0% { transform: translateY(-2px); }
+  50% { transform: translateY(2px); }
+  100% { transform: translateY(-2px); }
+}
+
+.vegas-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.vegas-meter {
+  background: #020617;
+  border: 2px solid #92400e;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.vegas-meter strong,
+.vegas-meter span {
+  display: block;
+}
+
+.vegas-meter strong {
+  color: #facc15;
+  font-size: 1.45rem;
+}
+
+.vegas-meter span {
+  color: #d1d5db;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.vegas-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.vegas-spin {
+  width: 100%;
+  min-height: 64px;
+  border-radius: 999px;
+  border: 4px solid #7f1d1d;
+  background: radial-gradient(circle at top, #f87171, #dc2626 55%, #7f1d1d);
+  color: #fff7ed;
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #450a0a, 0 18px 28px rgba(0, 0, 0, 0.35);
+}
+
+.vegas-spin:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #450a0a, 0 12px 18px rgba(0, 0, 0, 0.35);
+}
+
+.vegas-spin:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.vegas-reset {
+  white-space: nowrap;
+}
+
+.vegas-lever {
+  position: absolute;
+  right: -48px;
+  top: 40%;
+  display: grid;
+  justify-items: center;
+  gap: 0;
+}
+
+.lever-ball {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, #fecaca, #dc2626 55%, #7f1d1d);
+  border: 4px solid #fee2e2;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+.lever-stick {
+  width: 12px;
+  height: 115px;
+  background: linear-gradient(90deg, #fef3c7, #92400e);
+  border-radius: 999px;
+  border: 2px solid #451a03;
+}
+
+.slot-message.vegas-message {
+  min-height: 32px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #020617;
+  border: 1px solid #92400e;
+  color: #facc15;
+}
+
+.payout-table {
+  margin-top: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.payout-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #111827;
+  border: 1px solid #374151;
+}
+
+@media (max-width: 900px) {
+  .vegas-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vegas-lever {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .vegas-machine {
+    padding: 14px;
+  }
+
+  .vegas-reels {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .vegas-panel,
+  .vegas-controls {
+    grid-template-columns: 1fr;
+  }
+}
