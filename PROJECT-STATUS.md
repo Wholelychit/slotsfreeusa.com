@@ -74,6 +74,12 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Standardized `responsible-gaming.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links.
 - Standardized `how-we-review.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links.
 - Standardized `partner-with-us.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links.
+- Standardized `reviews.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links; partner inquiry now points to `partner-with-us.html`.
+- Standardized `best-free-slots-for-beginners.html` footer with Partner With Us link.
+- Standardized `sweepstakes-casino-guide.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links.
+- Standardized `what-are-social-casinos.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links.
+- Standardized `search.html` footer with Slot Terms, Free Spins, Partner With Us, and current trust links.
+- Verified final sitemap/canonical pages: `reviews.html`, `best-free-slots-for-beginners.html`, `sweepstakes-casino-guide.html`, `what-are-social-casinos.html`, and `search.html` all exist and have canonical URLs and favicons.
 - Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
 - Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
@@ -114,11 +120,10 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 
 ## Next Safe Queue
 
-1. Finish sitemap/canonical page existence verification for `reviews.html`, `best-free-slots-for-beginners.html`, `sweepstakes-casino-guide.html`, `what-are-social-casinos.html`, and `search.html`.
-2. Retry contact footer update later through Codex if needed.
-3. Continue affiliate applications manually through official portals using the prepared outreach batches.
-4. Record each submitted application in `AFFILIATE-APPLICATION-TRACKER.md` and/or marketing-system posting logs.
-5. Keep all monetization links inactive until approval and disclosure checks are complete.
+1. Begin external affiliate application workflow using prepared outreach drafts and official partner portals.
+2. Record every submitted application in `AFFILIATE-APPLICATION-TRACKER.md`.
+3. Retry contact footer update later through Codex if needed.
+4. Keep all monetization links inactive until approval and disclosure checks are complete.
 
 ## Stop Points
 
