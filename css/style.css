@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -19,6 +23,23 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+a,
+button,
+summary,
+.btn {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 4px;
 }
 
 .wrap {
@@ -68,6 +89,9 @@ select {
 .site-nav a {
   color: #f3f4f6;
   text-decoration: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .site-nav a:hover,
@@ -78,11 +102,14 @@ select {
 
 .menu-toggle {
   display: none;
-  background: none;
-  border: none;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 10px;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .hero,
@@ -130,10 +157,21 @@ select {
   align-items: center;
   justify-content: center;
   padding: 14px 22px;
+  min-height: 48px;
   border-radius: 10px;
   border: 0;
   text-decoration: none;
   font-weight: bold;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 .btn:disabled,
@@ -456,6 +494,7 @@ input:disabled {
   display: block;
   margin-bottom: 8px;
   text-decoration: none;
+  min-height: 32px;
 }
 
 .small-note {
@@ -465,13 +504,19 @@ input:disabled {
 }
 
 @media (max-width: 768px) {
+  .hero,
+  .page-hero {
+    padding: 54px 0;
+  }
+
   .hero-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
   .menu-toggle {
-    display: block;
+    display: inline-grid;
+    place-items: center;
   }
 
   .site-nav {
@@ -479,10 +524,17 @@ input:disabled {
     flex-direction: column;
     width: 100%;
     margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #374151;
   }
 
   .site-nav.show {
     display: flex;
+  }
+
+  .site-nav a {
+    width: 100%;
+    padding: 10px 0;
   }
 
   .nav-wrap {
@@ -506,6 +558,10 @@ input:disabled {
   .btn,
   .split-card .btn {
     width: 100%;
+  }
+
+  .section {
+    padding: 52px 0;
   }
 
   .slot-reels,
