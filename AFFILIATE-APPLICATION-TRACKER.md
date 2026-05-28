@@ -6,23 +6,34 @@ Use this file to track affiliate applications, contacts, replies, approval statu
 
 Public contact email: `slotsfreeusa@gmail.com`
 
+Related workflow files:
+
+- `AFFILIATE-APPLICATION-FORM-ANSWERS.md` for portal and email copy.
+- `AFFILIATE-SUBMISSION-LOG.md` for send dates, confirmations, and reply tracking.
+- `FOLLOW-UP-CALENDAR.md` for 5 to 7 business day follow-up planning.
+- `AFFILIATE-APPROVAL-CHECKLIST.md` for the pre-live gate after approval.
+- `PARTNER-CHECKLIST.md` for partner review controls.
+
 ## Rules
 
-1. Do not add live affiliate links until approval is confirmed.
+1. Do not add live affiliate links until approval is confirmed and `AFFILIATE-APPROVAL-CHECKLIST.md` is complete.
 2. Do not add paid tracking links until final URLs and disclosures are checked.
-3. Do not claim approval unless the partner confirms it.
+3. Do not claim approval unless the partner confirms it in writing.
 4. Do not publish state availability unless current partner terms support it.
 5. Keep all outreach professional, short, and clear.
 6. Use official partner portals or verified corporate contact paths only.
 7. Do not use guessed emails or unverified third-party affiliate pages.
+8. Keep Caesars on hold until an official affiliate path is verified.
 
 ## Application Status Labels
 
 - Researching
 - Ready to apply
+- Ready to contact
 - Applied
 - Follow-up needed
-- Approved
+- Approved for content only
+- Approved for live link
 - Rejected
 - Paused
 - Removed
@@ -32,11 +43,11 @@ Public contact email: `slotsfreeusa@gmail.com`
 
 | Partner | Type | Status | Contact / Portal | Date Sent | Next Action | Notes |
 |---|---|---|---|---|---|---|
-| BetMGM Partners | Regulated real-money casino affiliate | Ready to apply | https://www.betmgmpartners.com/ |  | Register/apply through official BetMGM Partners portal | Official portal shows Register and login flow. Need terms, allowed states, CPA/RevShare, and tracking details before linking. |
-| BetRivers / Rush Street Interactive | Regulated real-money casino affiliate | Ready to contact | https://www.rushstreetinteractive.com/contact |  | Use official RSI contact form and request affiliate/partner manager path | Official RSI contact form exists. Ask for correct BetRivers affiliate application path. No link until approval. |
-| B2Spin / SpinBlitz | Social/sweepstakes-style partner | Ready to contact | support@b2spin.com and https://www.b2spin.com/ |  | Email partner inquiry from `slotsfreeusa@gmail.com` | B2Spin site says content creators and partners can contact support (at) b2spin.com. SpinBlitz is operated by B-Two Operations Limited. Need CPA/RevShare terms before listing. |
-| Caesars Affiliates / Caesars Digital | Hold until verified | Hold until verified | Official affiliate portal/contact not verified yet |  | Do not apply through guessed or third-party pages; retry verification later | Search did not confirm a current official affiliate application path. Keep paused until verified. |
-| Display ad network | Ads | Not ready | Not selected |  | Wait until traffic and privacy setup are stronger | No live ad scripts yet. |
+| BetMGM Partners | Regulated real-money casino affiliate | Ready to apply | https://www.betmgmpartners.com/ |  | Register/apply through the official BetMGM Partners portal using `AFFILIATE-APPLICATION-FORM-ANSWERS.md`. After submitting, record the confirmation in `AFFILIATE-SUBMISSION-LOG.md` and schedule follow-up in `FOLLOW-UP-CALENDAR.md`. | Official portal shows Register and login flow. Need written approval, terms, allowed states, CPA/RevShare or hybrid details, tracking review, and disclosure placement before linking. |
+| B2Spin / SpinBlitz | Social/sweepstakes-style partner | Ready to contact | support@b2spin.com and https://www.b2spin.com/ |  | Send the prepared B2Spin / SpinBlitz email from `slotsfreeusa@gmail.com`. Then record the send date and schedule one 5 to 7 business day follow-up. | B2Spin site says content creators and partners can contact support. SpinBlitz is operated by B-Two Operations Limited. Need partner terms and approval before listing or linking. |
+| BetRivers / Rush Street Interactive | Regulated real-money casino affiliate | Ready to contact | https://www.rushstreetinteractive.com/contact |  | Use the official RSI contact form to ask for the correct BetRivers affiliate or media partner application path. Record any reply path before applying. | Official RSI contact form exists. No link until written approval, terms, state/location rules, tracking, and disclosures are checked. |
+| Caesars Affiliates / Caesars Digital | Hold until verified | Hold until verified | Official affiliate portal/contact not verified yet |  | Do not apply through guessed or third-party pages. Retry verification only through official Caesars corporate or brand-controlled channels. | Keep paused until an official affiliate path is verified. Do not submit forms or emails through unverified sources. |
+| Display ad network | Ads | Not ready | Not selected |  | Wait until traffic and privacy setup are stronger. | No live ad scripts yet. |
 
 ## Verified Source Notes
 
@@ -46,16 +57,19 @@ Official portal reviewed: `https://www.betmgmpartners.com/`
 
 Useful facts:
 
-- Page says “Become a BetMGM Partner.”
-- Page says “Join the world's leading gaming brands.”
+- Page says "Become a BetMGM Partner."
+- Page says "Join the world's leading gaming brands."
 - Page shows BetMGM and related brands.
 - Page includes Login and Register flow.
 
 Action:
 
-- Apply/register through official portal.
+- Apply/register through the official portal only.
 - Use `slotsfreeusa@gmail.com`.
-- Do not add any link until approval and terms are received.
+- Use `AFFILIATE-APPLICATION-FORM-ANSWERS.md` for form answers.
+- Record the submission in `AFFILIATE-SUBMISSION-LOG.md`.
+- Schedule one follow-up in `FOLLOW-UP-CALENDAR.md` for 5 to 7 business days later.
+- Do not add any BetMGM link until written approval, terms, state/location rules, tracking details, and disclosure placement are complete.
 
 ### BetRivers / Rush Street Interactive
 
@@ -65,7 +79,9 @@ Action:
 
 - Use the official RSI contact form.
 - Ask for the correct BetRivers affiliate or media partner application contact.
-- Do not add any link until approval and terms are received.
+- Record the contact date and any reply path in `AFFILIATE-SUBMISSION-LOG.md`.
+- Schedule one follow-up in `FOLLOW-UP-CALENDAR.md` for 5 to 7 business days later.
+- Do not add any BetRivers or RSI link until written approval and terms are received.
 
 ### B2Spin / SpinBlitz
 
@@ -74,14 +90,17 @@ Official B2Spin site reviewed: `https://www.b2spin.com/`
 Useful facts:
 
 - B2Spin says it builds free-to-play and social gaming experiences.
-- B2Spin lists “Content Creators and Partners” and says to contact `support@b2spin.com`.
+- B2Spin lists "Content Creators and Partners" and says to contact `support@b2spin.com`.
 - SpinBlitz site footer says SpinBlitz.com is operated by B-Two Operations Limited.
 
 Action:
 
 - Email `support@b2spin.com` from `slotsfreeusa@gmail.com`.
-- Ask for CPA, RevShare, hybrid, or sponsorship terms for SlotsFreeUSA.
-- Do not add any link until approval and terms are received.
+- Use the prepared message in `AFFILIATE-APPLICATION-FORM-ANSWERS.md`.
+- Ask for CPA, RevShare, hybrid, sponsorship, allowed traffic, age/location, disclosure, and brand rules.
+- Record the send date in `AFFILIATE-SUBMISSION-LOG.md`.
+- Schedule one follow-up in `FOLLOW-UP-CALENDAR.md` for 5 to 7 business days later.
+- Do not add any SpinBlitz or B2Spin link until approval and terms are received.
 
 ### Caesars
 
@@ -92,8 +111,9 @@ Status:
 Action:
 
 - Do not use guessed portals.
-- Retry official verification later.
-- Consider contacting Caesars through official corporate/contact channels only if no dedicated affiliate portal is found.
+- Do not use third-party affiliate pages unless Caesars confirms them through an official brand-controlled source.
+- Retry official verification later through official Caesars corporate or brand-controlled channels only.
+- Keep the tracker and submission log marked Hold until verified.
 
 ## Outreach Package
 
@@ -110,7 +130,7 @@ Use this information in applications:
 
 ## Short Application Message
 
-Subject: Affiliate Partnership Inquiry — SlotsFreeUSA.com
+Subject: Affiliate Partnership Inquiry - SlotsFreeUSA.com
 
 Hello,
 
@@ -128,48 +148,12 @@ Thank you,
 Gerry Lettrey
 SlotsFreeUSA / Wholelychit
 
-## B2Spin / SpinBlitz Email
-
-Subject: Partnership Inquiry — SlotsFreeUSA.com / SpinBlitz
-
-Hello,
-
-I operate SlotsFreeUSA.com, a public, mobile-first website for adults 21+ who want plain-language information about free slot-style games, social casino offers, sweepstakes-style casino terms, bonus language, and partner reviews.
-
-SlotsFreeUSA does not operate gambling, accept bets, process deposits, manage player accounts, or promise winnings. The site uses clear affiliate disclosures, responsible-play reminders, and review standards before any partner link goes live.
-
-I saw that B2Spin works with content creators and partners, and I would like to ask whether SlotsFreeUSA can apply to promote SpinBlitz on a CPA, RevShare, hybrid, or sponsorship basis.
-
-Website: https://slotsfreeusa.com
-Partner page: https://slotsfreeusa.com/partner-with-us.html
-Contact: slotsfreeusa@gmail.com
-
-Thank you,
-Gerry Lettrey
-SlotsFreeUSA / Wholelychit
-
-## RSI / BetRivers Contact Form Message
-
-Subject: Affiliate / Media Partner Inquiry — SlotsFreeUSA.com
-
-Hello,
-
-I operate SlotsFreeUSA.com, a public, mobile-first website for adults 21+ focused on free slot-style demos, casino education, social casino explainers, bonus terms, review standards, and responsible-play information.
-
-I would like to ask for the correct affiliate or media partner application path for BetRivers / Rush Street Interactive.
-
-SlotsFreeUSA does not operate gambling, accept bets, process deposits, manage player accounts, or promise winnings. We do not publish live partner links until terms, age rules, location rules, tracking, and disclosure checks are complete.
-
-Website: https://slotsfreeusa.com
-Partner page: https://slotsfreeusa.com/partner-with-us.html
-Contact: slotsfreeusa@gmail.com
-
-Thank you,
-Gerry Lettrey
-SlotsFreeUSA / Wholelychit
-
 ## Follow-Up Rule
 
-If no reply arrives, send one polite follow-up after 5 to 7 business days.
+If no reply arrives, send one polite follow-up after 5 to 7 business days using `FOLLOW-UP-CALENDAR.md`.
 
 Do not send repeated messages that look spammy.
+
+## Approval Rule
+
+After any approval, complete `AFFILIATE-APPROVAL-CHECKLIST.md` before publishing any live link, tracking URL, review CTA, ad script, or sponsored placement.
