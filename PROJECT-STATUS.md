@@ -67,6 +67,7 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Standardized `about.html` with canonical URL, favicon, disclosure bar, current nav/footer, and links to review standards and slot terms.
 - Standardized `privacy.html` with canonical URL, favicon, disclosure bar, updated contact email, future tracking/email language, and current nav/footer.
 - Standardized `terms.html` with canonical URL, favicon, disclosure bar, stronger disclaimers, and current nav/footer.
+- Standardized `play-free-slots.html` with favicon, social casino navigation link, and full footer with partner/trust links.
 - Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
 - Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
@@ -98,6 +99,7 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 ## Known Blockers
 
 - Separate `css/search.css` creation was blocked by the connector safety filter. Search page styling was added inline instead.
+- Privacy page clickable `mailto:` patch was blocked by the connector safety filter, but the correct contact email is visible in text.
 - Actual affiliate application submission may require official portal login, affiliate account setup, business details, tax/payment details, or partner-manager approval.
 - No live affiliate links should be added until partner terms, age rules, location rules, tracking, and disclosures are checked.
 - No live ad scripts should be added until ad network approval and privacy requirements are ready.
