@@ -50,24 +50,49 @@ These pages should load and make sense without ChatGPT explaining anything:
 - [ ] `terms.html`
 - [ ] `contact.html`
 - [ ] `how-we-review.html`
+- [ ] `partner-with-us.html`
 
-## 5. Contact Check
+## 5. SEO Guide Check
+
+These public guides should load, have one clear H1, include a canonical URL, and avoid live affiliate links unless approved:
+
+- [ ] `free-slots.html`
+- [ ] `play-free-slots.html`
+- [ ] `best-free-slots-for-beginners.html`
+- [ ] `no-download-slots.html`
+- [ ] `slot-terms-explained.html`
+- [ ] `free-spins-explained.html`
+- [ ] `casino-bonus-terms-explained.html`
+- [ ] `what-are-social-casinos.html`
+- [ ] `sweepstakes-casino-guide.html`
+
+## 6. Contact Check
 
 - [ ] Contact page shows `slotsfreeusa@gmail.com`.
 - [ ] The email link opens a mail app.
 - [ ] The page warns visitors not to send passwords, IDs, payment details, or private account data.
 - [ ] Partner inquiry instructions are clear.
 
-## 6. Crawl Check
+## 7. Crawl Check
 
 - [ ] `robots.txt` loads.
 - [ ] `robots.txt` allows public crawling.
 - [ ] `robots.txt` points to the sitemap.
 - [ ] `sitemap.xml` loads.
-- [ ] Sitemap includes all major public pages.
+- [ ] Sitemap includes all major public pages, including `no-download-slots.html`.
+- [ ] Every sitemap page exists.
+- [ ] Every sitemap page has a matching canonical URL.
 - [ ] Public pages do not include accidental `noindex` tags.
 
-## 7. Affiliate Readiness Check
+## 8. Search Check
+
+- [ ] `search.html` loads.
+- [ ] Searching `free slots` returns relevant pages.
+- [ ] Searching `no download` returns `no-download-slots.html`.
+- [ ] Searching `bonus terms` returns bonus and free-spin guides.
+- [ ] Empty or unmatched searches show readable fallback content.
+
+## 9. Affiliate Readiness Check
 
 Before applying to a partner program:
 
@@ -82,7 +107,7 @@ Before applying to a partner program:
 - [ ] No unsupported legal-availability claims appear.
 - [ ] No earnings or winnings are promised.
 
-## 8. Compliance Language Check
+## 10. Compliance Language Check
 
 Remove or rewrite any phrase like:
 
@@ -102,7 +127,7 @@ Use safer wording:
 - no guaranteed winnings
 - we do not accept bets or deposits
 
-## 9. Speed Check
+## 11. Speed Check
 
 - [ ] Images are not oversized.
 - [ ] No autoplay video exists.
@@ -110,7 +135,7 @@ Use safer wording:
 - [ ] No live ads are installed before approval.
 - [ ] No live tracking scripts are installed before privacy setup.
 
-## 10. Final Review
+## 12. Final Review
 
 Only promote or send affiliate applications after the site feels understandable to:
 
