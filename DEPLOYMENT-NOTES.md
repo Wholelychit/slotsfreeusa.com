@@ -4,14 +4,44 @@ Last updated: 2026-05-28
 
 ## Hosting Source of Truth
 
-SlotsFreeUSA is hosted through **Cloudflare**, not GitHub Pages.
+SlotsFreeUSA should be restored to the **Cloudflare Pages project** named:
 
-Cloudflare DNS currently routes:
+- `slotsfreeusa-com`
 
-- `slotsfreeusa.com` to Cloudflare Worker `slotsfreeusa`
-- `www.slotsfreeusa.com` to Cloudflare Worker `slotsfreeusa`
+Cloudflare reported that the deployed Worker named `slotsfreeusa` only contains a placeholder coming-soon page.
 
-Keep those Worker routes active unless the owner intentionally migrates hosting later.
+Cloudflare also reported that the original website still exists at:
+
+- `slotsfreeusa-com.pages.dev`
+
+That Pages project is the likely original designed website.
+
+## Current Recovery Decision
+
+Use Cloudflare Pages project `slotsfreeusa-com` as the live website target.
+
+Do not use GitHub Pages for this project unless the owner clearly requests a future migration.
+
+Do not keep the placeholder Worker as the root website if the Pages project contains the designed site.
+
+## DNS Recovery Plan
+
+In Cloudflare:
+
+1. Remove or detach Worker `slotsfreeusa` from `slotsfreeusa.com` and `www.slotsfreeusa.com`.
+2. Do not delete the Worker yet; just detach it from the live custom domains/routes.
+3. Restore `slotsfreeusa.com` to the Cloudflare Pages project `slotsfreeusa-com`.
+4. Restore `www.slotsfreeusa.com` to the Cloudflare Pages project `slotsfreeusa-com`.
+5. Confirm HTTPS is active.
+6. Confirm `slotsfreeusa-com.pages.dev` still works.
+7. Confirm the custom domain status is active in the Pages project.
+
+## Keep These DNS Records
+
+Do not delete these email/security records:
+
+- `_dmarc.slotsfreeusa.com` TXT record
+- `slotsfreeusa.com` SPF TXT record
 
 ## Repository Role
 
@@ -21,63 +51,37 @@ Repository:
 
 - `Wholelychit/slotsfreeusa.com`
 
-## Do Not Switch To GitHub Pages
+## Important Source-Control Gap
 
-Do not treat GitHub Pages as the active deployment target for this project.
+The live Cloudflare Pages project may contain the original designed site, but the repository may not yet match it.
 
-Do not remove the Cloudflare Worker DNS records unless the owner clearly requests a hosting migration.
-
-Do not replace Cloudflare Worker routing with GitHub Pages records without first confirming that the live Worker code has been copied into the repository.
-
-## Current Cloudflare Setup Seen By Owner
-
-Cloudflare DNS has four records:
-
-- `_dmarc.slotsfreeusa.com` TXT record
-- `slotsfreeusa.com` TXT SPF record
-- `slotsfreeusa.com` Worker route to `slotsfreeusa`
-- `www.slotsfreeusa.com` Worker route to `slotsfreeusa`
-
-The two TXT records are email/security records and should stay.
-
-The two Worker records are the live website routes and should stay.
-
-## Current Repository Gap
-
-No `wrangler.toml` or `wrangler.json` file was found in the repository during the 2026-05-28 check.
-
-That means the live Worker may have been created directly in Cloudflare, or the deploy config is not yet stored in this repo.
+Before replacing the Cloudflare Pages project or making a major redesign, compare the deployed Pages project against this repository.
 
 ## Safe Deployment Path
 
-1. Keep Cloudflare Worker routes active.
-2. Use GitHub for source files and documentation.
-3. Find or export the live Worker code from Cloudflare.
-4. Compare live Worker code against this repository before overwriting anything.
-5. Add a safe Cloudflare deploy config only after the live source is confirmed.
-6. Do not add private Cloudflare tokens, API keys, account IDs, or secrets to the repository.
+1. Restore the custom domain to Cloudflare Pages project `slotsfreeusa-com`.
+2. Verify the old designed website is visible at `slotsfreeusa.com`.
+3. Export or connect the Pages project source if possible.
+4. Compare the Pages source against this GitHub repository.
+5. Bring the repository into sync with the best live version.
+6. Continue building from the recovered live design.
 
-## Cloudflare Manual Check
+## Do Not Do Yet
 
-In Cloudflare, check:
-
-1. Workers & Pages
-2. Worker named `slotsfreeusa`
-3. Deployments
-4. Routes
-5. Preview
-6. Source/code view if available
-
-If the Worker contains the designed website that was already online, copy or export that source before making major repo changes.
+- Do not delete the Pages project.
+- Do not delete the email TXT records.
+- Do not publish over the Pages project until the live design is reviewed.
+- Do not add live affiliate links until partner terms, age rules, location rules, tracking, and disclosures are checked.
+- Do not add live ad scripts until ad network approval and privacy requirements are ready.
+- Do not add private Cloudflare tokens, API keys, account IDs, or secrets to the repository.
 
 ## Future Cloudflare Improvements
 
 Safe improvements after source is confirmed:
 
-- Add `_headers` for security headers if Cloudflare Pages/static assets are used.
+- Add `_headers` for security headers if static Pages assets are used.
 - Add `_redirects` if static redirect rules are used.
-- Add `wrangler.toml` only if the Cloudflare deploy method is confirmed.
-- Add deployment checklist for Worker routes.
+- Add a confirmed Cloudflare Pages deployment checklist.
 - Add cache rules for static assets.
 - Add analytics only after privacy requirements are ready.
 
