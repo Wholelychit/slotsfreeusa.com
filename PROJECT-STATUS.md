@@ -68,10 +68,10 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Standardized `privacy.html` with canonical URL, favicon, disclosure bar, updated contact email, future tracking/email language, and current nav/footer.
 - Standardized `terms.html` with canonical URL, favicon, disclosure bar, stronger disclaimers, and current nav/footer.
 - Standardized `play-free-slots.html` with favicon, social casino navigation link, and full footer with partner/trust links.
+- Standardized `affiliate-disclosure.html` footer with Slot Terms, Free Spins, How We Review, Partner With Us, and current trust links.
 - Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
 - Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
-- Affiliate disclosure page was strengthened with clearer revenue, review, and compliance language.
 - Contact page now shows `slotsfreeusa@gmail.com` for website feedback, affiliate inquiries, advertising questions, partner review requests, and content corrections.
 - Contact page links to `partner-with-us.html` for partner requirements.
 - Added `partner-with-us.html` as a public affiliate and advertising inquiry page.
