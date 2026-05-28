@@ -52,7 +52,7 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 ## Completed Safe Work
 
 - Homepage has SEO title, meta description, canonical URL, Open Graph tags, schema markup, free-slot CTA, disclosure bar, Lucky Lou section, newsletter placeholder, review cards, and FAQ content.
-- Review hub has comparison criteria and future partner review structure.
+- Review hub has comparison criteria, partner status labels, future partner review structure, and clear pending/approved/paused/removed language.
 - Added `how-we-review.html` as a public review-standards and partner-trust page.
 - Linked the review hub and homepage footer to `how-we-review.html`.
 - Added `how-we-review.html` to `sitemap.xml`.
@@ -61,17 +61,22 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
 - Affiliate disclosure page was strengthened with clearer revenue, review, and compliance language.
 - Contact page now shows `slotsfreeusa@gmail.com` for website feedback, affiliate inquiries, advertising questions, partner review requests, and content corrections.
+- Contact page links to `partner-with-us.html` for partner requirements.
+- Added `partner-with-us.html` as a public affiliate and advertising inquiry page.
+- Added `partner-with-us.html` to `sitemap.xml`.
+- Homepage footer now links to `partner-with-us.html`.
 - Sitemap includes `lastmod` dates.
 - Robots file allows public crawling and blocks `/go/` redirect paths.
 - Agent workflow rules are in place: do not ask Gerry to paste/create/update routine safe files manually.
 - Added `CODEX-WORKFLOW.md` for Codex-first repo editing.
 - Added `MANUAL-QA-CHECKLIST.md` for affiliate, crawl, mobile, footer, trust-page, and compliance checks.
-- README now lists the public contact email, QA checklist, independence rule, and controlled-AI-later rule.
+- Expanded `PARTNER-CHECKLIST.md` with status labels, red flags, removal rules, and approval records.
+- Added `AFFILIATE-APPLICATION-TRACKER.md` for outreach tracking.
+- README now lists the public contact email, QA checklist, partner files, independence rule, and controlled-AI-later rule.
+- Added FAQ schema and visible FAQ content to `best-free-slots-for-beginners.html`, `sweepstakes-casino-guide.html`, and `what-are-social-casinos.html`.
 
 ## Known Blockers
 
-- Updating `PARTNER-CHECKLIST.md` through the ChatGPT GitHub connector was blocked by the connector safety filter. Existing checklist remains in place and should be expanded later through Codex or smaller safe writes.
-- Creating `partner-with-us.html` was blocked by the connector safety filter during direct write. This page should be retried later in Codex or through a smaller safe write path.
 - No live affiliate links should be added until partner terms, age rules, location rules, tracking, and disclosures are checked.
 - No live ad scripts should be added until ad network approval and privacy requirements are ready.
 - No email signup should collect data until email provider, consent language, and privacy policy updates are ready.
@@ -79,13 +84,11 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 
 ## Next Safe Queue
 
-1. Add lightweight schema to key guide pages where safe.
-2. Improve `best-free-slots-for-beginners.html` with stronger internal links and beginner FAQ schema.
-3. Improve `sweepstakes-casino-guide.html` with clearer terms and FAQ schema.
-4. Improve `what-are-social-casinos.html` with internal links and plain-language examples.
-5. Retry partner inquiry page later through Codex or smaller safe write path.
-6. Expand `PARTNER-CHECKLIST.md` later through Codex or smaller safe write path.
-7. Keep all monetization links inactive until approval and disclosure checks are complete.
+1. Add partner page link to remaining footers when convenient.
+2. Create first affiliate outreach email batch using `slotsfreeusa@gmail.com`.
+3. Create social post batch for SlotsFreeUSA launch traffic.
+4. Add review-template examples for pending, approved, paused, and removed partners.
+5. Keep all monetization links inactive until approval and disclosure checks are complete.
 
 ## Stop Points
 
