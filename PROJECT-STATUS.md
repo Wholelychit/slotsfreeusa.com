@@ -56,6 +56,9 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Added `how-we-review.html` as a public review-standards and partner-trust page.
 - Linked the review hub and homepage footer to `how-we-review.html`.
 - Added `how-we-review.html` to `sitemap.xml`.
+- Upgraded `slot-terms-explained.html` into a full SEO guide with FAQ schema, tables, plain-English definitions, safety language, and internal links.
+- Added `slot-terms-explained.html` to `sitemap.xml`.
+- Linked `free-slots.html`, `best-free-slots-for-beginners.html`, and `bonuses.html` to the slot terms guide.
 - Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
 - Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
@@ -84,11 +87,12 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 
 ## Next Safe Queue
 
-1. Add partner page link to remaining footers when convenient.
-2. Create first affiliate outreach email batch using `slotsfreeusa@gmail.com`.
-3. Create social post batch for SlotsFreeUSA launch traffic.
-4. Add review-template examples for pending, approved, paused, and removed partners.
-5. Keep all monetization links inactive until approval and disclosure checks are complete.
+1. Create next SEO article/page: `free-spins-explained.html`.
+2. Add partner page link to remaining footers when convenient.
+3. Create first affiliate outreach email batch using `slotsfreeusa@gmail.com`.
+4. Create social post batch for SlotsFreeUSA launch traffic.
+5. Add review-template examples for pending, approved, paused, and removed partners.
+6. Keep all monetization links inactive until approval and disclosure checks are complete.
 
 ## Stop Points
 
