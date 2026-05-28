@@ -63,6 +63,10 @@ No React, no Vite, no build tools, and no unnecessary framework complexity.
 - `MANUAL-QA-CHECKLIST.md`
 - `PARTNER-CHECKLIST.md`
 - `AFFILIATE-APPLICATION-TRACKER.md`
+- `AFFILIATE-APPLICATION-FORM-ANSWERS.md`
+- `AFFILIATE-SUBMISSION-LOG.md`
+- `FOLLOW-UP-CALENDAR.md`
+- `AFFILIATE-APPROVAL-CHECKLIST.md`
 
 ## Brand Direction
 
@@ -92,4 +96,4 @@ AI and Codex should update routine safe files directly instead of asking Gerry t
 
 ## Partner Rule
 
-Partner links, paid tracking, display ads, and sponsorship placements stay inactive until review, disclosure, age rules, location rules, and final destination checks are complete.
+Partner links, paid tracking, display ads, and sponsorship placements stay inactive until review, disclosure, age rules, location rules, final destination checks, and `AFFILIATE-APPROVAL-CHECKLIST.md` are complete.
