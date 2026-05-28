@@ -75,11 +75,20 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Added `MANUAL-QA-CHECKLIST.md` for affiliate, crawl, mobile, footer, trust-page, and compliance checks.
 - Expanded `PARTNER-CHECKLIST.md` with status labels, red flags, removal rules, and approval records.
 - Added `AFFILIATE-APPLICATION-TRACKER.md` for outreach tracking.
+- Added `AFFILIATE-OUTREACH-BATCH-001.md` for regulated casino, social casino, sponsorship, and follow-up outreach drafts.
+- Added `SOCIAL-LAUNCH-BATCH-001.md` for launch posts, YouTube Shorts scripts, Pinterest titles, and hashtags.
+- Added `REVIEW-STATUS-TEMPLATES.md` for pending, contacted, approved, paused, and removed partner language.
 - README now lists the public contact email, QA checklist, partner files, independence rule, and controlled-AI-later rule.
 - Added FAQ schema and visible FAQ content to `best-free-slots-for-beginners.html`, `sweepstakes-casino-guide.html`, and `what-are-social-casinos.html`.
+- Hardened `js/app.js` for mobile menu accessibility, escape-key closing, link-close behavior, and safer Lucky Lou rendering.
+- Hardened `js/free-slots-game.js` so the free slot game checks required elements before running and avoids duplicate-spin problems.
+- Replaced the `search.html` placeholder with a real static search page.
+- Added `js/site-search.js` with static page search across key SlotsFreeUSA pages.
+- Added inline search page styling after separate CSS creation was blocked by the connector.
 
 ## Known Blockers
 
+- Separate `css/search.css` creation was blocked by the connector safety filter. Search page styling was added inline instead.
 - No live affiliate links should be added until partner terms, age rules, location rules, tracking, and disclosures are checked.
 - No live ad scripts should be added until ad network approval and privacy requirements are ready.
 - No email signup should collect data until email provider, consent language, and privacy policy updates are ready.
@@ -87,12 +96,11 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 
 ## Next Safe Queue
 
-1. Create next SEO article/page: `free-spins-explained.html`.
-2. Add partner page link to remaining footers when convenient.
-3. Create first affiliate outreach email batch using `slotsfreeusa@gmail.com`.
-4. Create social post batch for SlotsFreeUSA launch traffic.
-5. Add review-template examples for pending, approved, paused, and removed partners.
-6. Keep all monetization links inactive until approval and disclosure checks are complete.
+1. Run a footer/navigation consistency pass across all public pages.
+2. Create next SEO article/page: `free-spins-explained.html`.
+3. Add partner page link to remaining footers when convenient.
+4. Check every sitemap page exists and has matching canonical URL.
+5. Keep all monetization links inactive until approval and disclosure checks are complete.
 
 ## Stop Points
 
