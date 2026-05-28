@@ -2,6 +2,16 @@
 
 Last updated: 2026-05-28
 
+## Codex-first workflow
+
+Codex is the primary workflow for routine SlotsFreeUSA repository editing.
+
+Use the ChatGPT GitHub connector only for small reads, checks, reviews, or emergency single-file edits when Codex is unavailable.
+
+Current workflow file:
+
+- `CODEX-WORKFLOW.md`
+
 ## Current Stack
 
 - Static HTML
@@ -34,6 +44,7 @@ The site must stay clear that it does not operate gambling, accept bets, process
 - Sitemap now includes `lastmod` dates.
 - Robots file allows public crawling and blocks `/go/` redirect paths.
 - Agent workflow rules are in place: do not ask Gerry to paste/create/update routine safe files manually.
+- Added `CODEX-WORKFLOW.md` for Codex-first repo editing.
 
 ## Known Blockers
 
