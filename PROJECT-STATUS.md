@@ -59,6 +59,9 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Upgraded `slot-terms-explained.html` into a full SEO guide with FAQ schema, tables, plain-English definitions, safety language, and internal links.
 - Added `slot-terms-explained.html` to `sitemap.xml`.
 - Linked `free-slots.html`, `best-free-slots-for-beginners.html`, and `bonuses.html` to the slot terms guide.
+- Added `free-spins-explained.html` as a full SEO guide with FAQ schema, comparison table, safety language, and internal links.
+- Added `free-spins-explained.html` to `sitemap.xml`.
+- Linked `bonuses.html`, `best-free-slots-for-beginners.html`, and `slot-terms-explained.html` to the free spins guide.
 - Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
 - Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
@@ -89,6 +92,7 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 ## Known Blockers
 
 - Separate `css/search.css` creation was blocked by the connector safety filter. Search page styling was added inline instead.
+- Actual affiliate application submission may require official portal login, affiliate account setup, business details, tax/payment details, or partner-manager approval.
 - No live affiliate links should be added until partner terms, age rules, location rules, tracking, and disclosures are checked.
 - No live ad scripts should be added until ad network approval and privacy requirements are ready.
 - No email signup should collect data until email provider, consent language, and privacy policy updates are ready.
@@ -97,9 +101,9 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 ## Next Safe Queue
 
 1. Run a footer/navigation consistency pass across all public pages.
-2. Create next SEO article/page: `free-spins-explained.html`.
-3. Add partner page link to remaining footers when convenient.
-4. Check every sitemap page exists and has matching canonical URL.
+2. Check every sitemap page exists and has matching canonical URL.
+3. Continue affiliate applications manually through official portals using the prepared outreach batches.
+4. Record each submitted application in `AFFILIATE-APPLICATION-TRACKER.md` and/or marketing-system posting logs.
 5. Keep all monetization links inactive until approval and disclosure checks are complete.
 
 ## Stop Points
