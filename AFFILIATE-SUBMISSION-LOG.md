@@ -6,35 +6,44 @@ Use this file after each affiliate application, contact form, or partner email i
 
 Public contact email: `slotsfreeusa@gmail.com`
 
+Related workflow files:
+
+- `AFFILIATE-APPLICATION-TRACKER.md` tracks partner status and next actions.
+- `AFFILIATE-APPLICATION-FORM-ANSWERS.md` stores safe form answers and outreach copy.
+- `FOLLOW-UP-CALENDAR.md` plans one 5 to 7 business day follow-up.
+- `AFFILIATE-APPROVAL-CHECKLIST.md` controls the pre-live approval gate.
+- `PARTNER-CHECKLIST.md` controls partner review quality and removal rules.
+
 ## Submission Rules
 
 1. Record every application the same day it is submitted.
-2. Do not add live affiliate links until written approval and terms are received.
+2. Do not add live affiliate links until written approval is received and `AFFILIATE-APPROVAL-CHECKLIST.md` is complete.
 3. Save the portal URL, confirmation number, reply email, or screenshot note if available.
 4. Send only one polite follow-up after 5 to 7 business days unless the partner replies.
 5. If rejected, mark rejected and do not keep sending repeated messages.
+6. Keep Caesars on hold until an official verified affiliate path is found.
 
 ## Current Submission Queue
 
 | Priority | Partner | Path | Status | Action |
 |---|---|---|---|---|
-| 1 | BetMGM Partners | Official portal | Ready | Register/apply using `AFFILIATE-APPLICATION-FORM-ANSWERS.md` |
-| 2 | B2Spin / SpinBlitz | support@b2spin.com | Ready | Send prepared email from `slotsfreeusa@gmail.com` |
-| 3 | Rush Street Interactive / BetRivers | Official RSI contact form | Ready | Ask for correct affiliate/media partner application path |
-| 4 | Caesars | Not verified | Hold | Do not submit until official path is verified |
+| 1 | BetMGM Partners | Official BetMGM Partners portal | Ready | Register/apply using `AFFILIATE-APPLICATION-FORM-ANSWERS.md`; then record confirmation and schedule follow-up. |
+| 2 | B2Spin / SpinBlitz | Email to support@b2spin.com | Ready | Send prepared email from `slotsfreeusa@gmail.com`; then record send date and schedule follow-up. |
+| 3 | Rush Street Interactive / BetRivers | Official RSI contact form | Ready | Ask for correct affiliate/media partner application path; then record reply path before applying. |
+| 4 | Caesars | Not verified | Hold | Do not submit until an official Caesars-controlled affiliate path is verified. |
 
 ## Submission Records
 
-| Date Sent | Partner | Method | Status After Sending | Confirmation / Reply Path | Follow-Up Date | Notes |
-|---|---|---|---|---|---|---|
-|  | BetMGM Partners | Portal registration | Not sent yet |  |  | Apply at official BetMGM Partners portal. |
-|  | B2Spin / SpinBlitz | Email to support@b2spin.com | Not sent yet |  |  | Send from slotsfreeusa@gmail.com. |
-|  | RSI / BetRivers | Official RSI contact form | Not sent yet |  |  | Ask for correct affiliate/media partner contact. |
-|  | Caesars | Not verified | Hold |  |  | No guessed portals. |
+| Date Sent | Partner | Method | Status After Sending | Confirmation / Reply Path | Follow-Up Window | Planned Follow-Up Date | Notes |
+|---|---|---|---|---|---|---|---|
+|  | BetMGM Partners | Portal registration | Not sent yet |  | 5 to 7 business days after submit |  | Apply at official BetMGM Partners portal only. |
+|  | B2Spin / SpinBlitz | Email to support@b2spin.com | Not sent yet |  | 5 to 7 business days after send |  | Send from `slotsfreeusa@gmail.com`. |
+|  | RSI / BetRivers | Official RSI contact form | Not sent yet |  | 5 to 7 business days after submit |  | Ask for correct affiliate/media partner contact. |
+|  | Caesars | Not verified | Hold |  | Hold | Hold | No guessed portals or third-party pages. |
 
 ## Follow-Up Template
 
-Subject: Follow-Up — SlotsFreeUSA.com Partnership Inquiry
+Subject: Follow-Up - SlotsFreeUSA.com Partnership Inquiry
 
 Hello,
 
@@ -52,13 +61,24 @@ Thank you,
 Gerry Lettrey
 SlotsFreeUSA / Wholelychit
 
+## After Submission
+
+Update:
+
+- `AFFILIATE-APPLICATION-TRACKER.md`
+- `FOLLOW-UP-CALENDAR.md`
+- This submission log
+
+Keep all partner links inactive while waiting for replies.
+
 ## After Approval
 
 After approval, do not immediately add links.
 
-First collect:
+First complete `AFFILIATE-APPROVAL-CHECKLIST.md` and collect:
 
 - approved brand name
+- written approval contact
 - allowed states/locations
 - age rules
 - affiliate terms
@@ -67,11 +87,14 @@ First collect:
 - creative rules
 - prohibited claims
 - payment terms
-- approval contact
+- responsible-play/support pages
 
 Then update:
 
 - `AFFILIATE-APPLICATION-TRACKER.md`
 - `PARTNER-CHECKLIST.md`
-- `REVIEWS` or future partner review files
-- disclosure language near every live partner link
+- `PROJECT-STATUS.md`
+- relevant review or partner files
+- disclosure language near every future live partner link
+
+No live link should be published until written approval, terms, age/location rules, destination checks, tracking review, disclosure placement, and manual QA are complete.
