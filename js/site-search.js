@@ -12,6 +12,18 @@ const searchPages = [
     keywords: 'free slots no download slot types fruit slots classic slots beginner'
   },
   {
+    title: 'Slot Terms Explained',
+    url: 'slot-terms-explained.html',
+    summary: 'Learn reels, paylines, symbols, wilds, scatters, free spins, and bonus rules in plain English.',
+    keywords: 'slot terms reels paylines symbols wilds scatters free spins bonus rounds playthrough glossary'
+  },
+  {
+    title: 'Free Spins Explained',
+    url: 'free-spins-explained.html',
+    summary: 'Understand free-spin offers, expiration dates, eligible games, playthrough rules, and location checks.',
+    keywords: 'free spins explained free spin offers eligible games expiration playthrough rules location'
+  },
+  {
     title: 'Best Free Slots for Beginners',
     url: 'best-free-slots-for-beginners.html',
     summary: 'Start with simple 3-reel slots, fruit symbols, and free-play demos.',
@@ -131,7 +143,7 @@ function renderResults() {
         const haystack = normalizeText(`${page.title} ${page.summary} ${page.keywords}`);
         return query.split(/\s+/).every((term) => haystack.includes(term));
       })
-    : searchPages.slice(0, 9);
+    : searchPages.slice(0, 12);
 
   searchResults.replaceChildren();
 
@@ -149,7 +161,7 @@ function renderResults() {
     const title = document.createElement('h3');
     title.textContent = 'Try a simpler search';
     const text = document.createElement('p');
-    text.textContent = 'Try words like free slots, bonuses, social casinos, sweepstakes, reviews, contact, or responsible play.';
+    text.textContent = 'Try words like free slots, free spins, slot terms, bonuses, social casinos, sweepstakes, reviews, contact, or responsible play.';
     empty.appendChild(title);
     empty.appendChild(text);
     searchResults.appendChild(empty);
