@@ -3,31 +3,44 @@
    Virtual credits only. No deposits. No payouts. No real-money gambling.
    ==================================================================== */
 
-const slotSymbols = ["🍒", "🍋", "🔔", "BAR", "7️⃣"];
+const slotSymbols = ['🍒', '🍋', '🔔', 'BAR', '7️⃣'];
 const payoutTable = {
-  "🍒": 40,
-  "🍋": 30,
-  "🔔": 80,
-  "BAR": 120,
-  "7️⃣": 150
+  '🍒': 40,
+  '🍋': 30,
+  '🔔': 80,
+  BAR: 120,
+  '7️⃣': 150
 };
+
+const gameElements = {
+  reels: Array.from(document.querySelectorAll('.reel')),
+  credits: document.getElementById('credits'),
+  spins: document.getElementById('spins'),
+  lastWin: document.getElementById('lastWin'),
+  message: document.getElementById('gameMessage'),
+  spinButton: document.getElementById('spinButton'),
+  resetButton: document.getElementById('resetButton')
+};
+
+const gameReady =
+  gameElements.reels.length === 3 &&
+  gameElements.credits &&
+  gameElements.spins &&
+  gameElements.lastWin &&
+  gameElements.message &&
+  gameElements.spinButton &&
+  gameElements.resetButton;
 
 let credits = 1000;
 let spins = 0;
 let lastWin = 0;
-
-const reels = Array.from(document.querySelectorAll(".reel"));
-const creditsEl = document.getElementById("credits");
-const spinsEl = document.getElementById("spins");
-const lastWinEl = document.getElementById("lastWin");
-const messageEl = document.getElementById("gameMessage");
-const spinButton = document.getElementById("spinButton");
-const resetButton = document.getElementById("resetButton");
+let isSpinning = false;
 
 function updateStats() {
-  creditsEl.textContent = credits.toString();
-  spinsEl.textContent = spins.toString();
-  lastWinEl.textContent = lastWin.toString();
+  if (!gameReady) return;
+  gameElements.credits.textContent = credits.toString();
+  gameElements.spins.textContent = spins.toString();
+  gameElements.lastWin.textContent = lastWin.toString();
 }
 
 function pickSymbol() {
@@ -50,40 +63,39 @@ function scoreSpin(results) {
 
 function setReelText(reel, symbol) {
   reel.textContent = symbol;
-  if (symbol === "BAR") {
-    reel.classList.add("bar-symbol");
-  } else {
-    reel.classList.remove("bar-symbol");
-  }
+  reel.classList.toggle('bar-symbol', symbol === 'BAR');
 }
 
 function spin() {
+  if (!gameReady || isSpinning) return;
+
   const bet = 10;
 
   if (credits < bet) {
-    messageEl.textContent = "Out of virtual credits. Press Reset to play again for free.";
+    gameElements.message.textContent = 'Out of virtual credits. Press Reset to play again for free.';
     return;
   }
 
   credits -= bet;
   spins += 1;
-  spinButton.disabled = true;
-  messageEl.textContent = "Reels spinning...";
-  reels.forEach((reel) => reel.classList.add("spinning"));
+  isSpinning = true;
+  gameElements.spinButton.disabled = true;
+  gameElements.message.textContent = 'Reels spinning...';
+  gameElements.reels.forEach((reel) => reel.classList.add('spinning'));
 
   let animationCount = 0;
   const animation = setInterval(() => {
-    reels.forEach((reel) => {
+    gameElements.reels.forEach((reel) => {
       setReelText(reel, pickSymbol());
     });
 
     animationCount += 1;
     if (animationCount >= 16) {
       clearInterval(animation);
-      const results = reels.map(() => pickSymbol());
+      const results = gameElements.reels.map(() => pickSymbol());
 
-      reels.forEach((reel, index) => {
-        reel.classList.remove("spinning");
+      gameElements.reels.forEach((reel, index) => {
+        reel.classList.remove('spinning');
         setReelText(reel, results[index]);
       });
 
@@ -91,34 +103,41 @@ function spin() {
       credits += lastWin;
 
       if (lastWin >= 100) {
-        messageEl.textContent = `Big free-play hit: ${lastWin} virtual credits.`;
+        gameElements.message.textContent = `Big free-play hit: ${lastWin} virtual credits.`;
       } else if (lastWin > 0) {
-        messageEl.textContent = `Free-play win: ${lastWin} virtual credits.`;
+        gameElements.message.textContent = `Free-play win: ${lastWin} virtual credits.`;
       } else {
-        messageEl.textContent = "No match this spin. Try again for fun.";
+        gameElements.message.textContent = 'No match this spin. Try again for fun.';
       }
 
       updateStats();
-      spinButton.disabled = false;
+      isSpinning = false;
+      gameElements.spinButton.disabled = false;
     }
   }, 65);
 }
 
 function resetGame() {
+  if (!gameReady) return;
+
   credits = 1000;
   spins = 0;
   lastWin = 0;
-  const startingSymbols = ["7️⃣", "🍒", "🔔"];
-  reels.forEach((reel, index) => {
-    reel.classList.remove("spinning");
+  isSpinning = false;
+
+  const startingSymbols = ['7️⃣', '🍒', '🔔'];
+  gameElements.reels.forEach((reel, index) => {
+    reel.classList.remove('spinning');
     setReelText(reel, startingSymbols[index]);
   });
-  messageEl.textContent = "Virtual credits reset. No real money is used.";
+
+  gameElements.message.textContent = 'Virtual credits reset. No real money is used.';
   updateStats();
-  spinButton.disabled = false;
+  gameElements.spinButton.disabled = false;
 }
 
-spinButton.addEventListener("click", spin);
-resetButton.addEventListener("click", resetGame);
-
-resetGame();
+if (gameReady) {
+  gameElements.spinButton.addEventListener('click', spin);
+  gameElements.resetButton.addEventListener('click', resetGame);
+  resetGame();
+}
