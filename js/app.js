@@ -2,8 +2,27 @@ const menuToggle = document.getElementById('menuToggle');
 const siteNav = document.getElementById('siteNav');
 
 if (menuToggle && siteNav) {
-  menuToggle.addEventListener('click', () => {
-    siteNav.classList.toggle('show');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-controls', siteNav.id || 'siteNav');
+
+  const closeMenu = () => {
+    siteNav.classList.remove('show');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  const toggleMenu = () => {
+    const isOpen = siteNav.classList.toggle('show');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  };
+
+  menuToggle.addEventListener('click', toggleMenu);
+
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
   });
 }
 
@@ -15,16 +34,26 @@ function showLuckyLouTip(category) {
   const tips = luckyLouDialog[category];
   const randomTip = tips[Math.floor(Math.random() * tips.length)];
 
-  box.innerHTML = `
-    <div class="lou-box">
-      <div class="lou-icon" aria-hidden="true">🎰</div>
+  const louBox = document.createElement('div');
+  louBox.className = 'lou-box';
 
-      <div>
-        <h3>Lucky Lou Says</h3>
-        <p>${randomTip}</p>
-      </div>
-    </div>
-  `;
+  const icon = document.createElement('div');
+  icon.className = 'lou-icon';
+  icon.setAttribute('aria-hidden', 'true');
+  icon.textContent = '🎰';
+
+  const content = document.createElement('div');
+  const heading = document.createElement('h3');
+  const text = document.createElement('p');
+
+  heading.textContent = 'Lucky Lou Says';
+  text.textContent = randomTip;
+
+  content.appendChild(heading);
+  content.appendChild(text);
+  louBox.appendChild(icon);
+  louBox.appendChild(content);
+  box.replaceChildren(louBox);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
