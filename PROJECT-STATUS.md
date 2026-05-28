@@ -42,6 +42,9 @@ The site must stay clear that it does not operate gambling, accept bets, process
 - Added `how-we-review.html` as a public review-standards and partner-trust page.
 - Linked the review hub and homepage footer to `how-we-review.html`.
 - Added `how-we-review.html` to `sitemap.xml`.
+- Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
+- Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
+- Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
 - Affiliate disclosure page was strengthened with clearer revenue, review, and compliance language.
 - Contact page was upgraded for reader feedback, business inquiries, correction requests, and privacy-safe limits.
 - Sitemap now includes `lastmod` dates.
@@ -51,6 +54,7 @@ The site must stay clear that it does not operate gambling, accept bets, process
 
 ## Known Blockers
 
+- Updating `PARTNER-CHECKLIST.md` through the ChatGPT GitHub connector was blocked by the connector safety filter. Existing checklist remains in place and should be expanded later through Codex or smaller safe writes.
 - Creating `partner-with-us.html` was blocked by the connector safety filter during direct write. This page should be retried later in Codex or through a smaller safe write path.
 - No live affiliate links should be added until partner terms, age rules, location rules, tracking, and disclosures are checked.
 - No live ad scripts should be added until ad network approval and privacy requirements are ready.
@@ -58,13 +62,13 @@ The site must stay clear that it does not operate gambling, accept bets, process
 
 ## Next Safe Queue
 
-1. Retry or add partner inquiry page safely.
-2. Add a `PARTNER-CHECKLIST.md` file for affiliate/program approval review.
-3. Improve `bonuses.html` with a clearer bonus-terms explainer.
-4. Improve `responsible-gaming.html` with stronger help-resource language and plain-English limits.
-5. Improve `free-slots.html` and beginner guide internal links.
-6. Add lightweight schema to key guide pages.
-7. Add manual QA checklist for links, mobile menu, footer, sitemap, and disclosure language.
+1. Add manual QA checklist for links, mobile menu, footer, sitemap, disclosure language, and legal-risk wording.
+2. Add lightweight schema to key guide pages where safe.
+3. Improve `best-free-slots-for-beginners.html` with better internal links.
+4. Improve `sweepstakes-casino-guide.html` with clearer terms and review-standard links.
+5. Improve `what-are-social-casinos.html` with internal links and plain-language examples.
+6. Retry partner inquiry page later through Codex or smaller safe write path.
+7. Expand `PARTNER-CHECKLIST.md` later through Codex or smaller safe write path.
 
 ## Stop Points
 
