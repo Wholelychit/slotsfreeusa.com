@@ -64,6 +64,9 @@ Use this email for SlotsFreeUSA website feedback, affiliate inquiries, advertisi
 - Added `free-spins-explained.html` to `sitemap.xml`.
 - Linked `bonuses.html`, `best-free-slots-for-beginners.html`, and `slot-terms-explained.html` to the free spins guide.
 - Added partner/footer trust links to `free-spins-explained.html`.
+- Standardized `about.html` with canonical URL, favicon, disclosure bar, current nav/footer, and links to review standards and slot terms.
+- Standardized `privacy.html` with canonical URL, favicon, disclosure bar, updated contact email, future tracking/email language, and current nav/footer.
+- Standardized `terms.html` with canonical URL, favicon, disclosure bar, stronger disclaimers, and current nav/footer.
 - Improved `free-slots.html` with consistent navigation, footer links, favicon, and links to review standards, bonus guide, responsible play, and beginner tips.
 - Improved `bonuses.html` with stronger review-process links, safer offer language, and consistent footer links.
 - Improved `responsible-gaming.html` with a safety-check table, stronger plain-English limits, and consistent footer links.
