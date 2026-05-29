@@ -21,7 +21,9 @@ Search passed for `social`, `bonus`, and `slots`.
 
 Trust/legal pages passed browser check. Repo-side static trust/legal check also passed for Contact, Privacy, Terms, Affiliate Disclosure, and Responsible Play.
 
-Mobile and desktop layout QA remain pending before public promotion, affiliate follow-up, or monetization.
+Repo-side static layout sanity check passed for responsive menu, grid/card stacking, footer stacking, table overflow, full-width mobile buttons, and Classic Vegas slot page one-column behavior.
+
+Manual mobile and desktop browser layout checks remain pending before public promotion, affiliate follow-up, or monetization.
 
 ## Do Not Add During QA
 
@@ -42,6 +44,7 @@ QA should test the current public site only.
 | Date | Tester | Environment | Pages Checked | Result | Notes |
 |---|---|---|---|---|---|
 | 2026-05-28 | Gerry | Browser | `https://slotsfreeusa.com/` plus five checked pages | PASS | Main domain loaded. Gerry reported all five checked pages passed. |
+| 2026-05-28 | Static repo check | CSS / responsive rules | `css/style.css`; `css/classic-vegas-slot.css` | PASS / STATIC | Mobile nav, stacked footer, cards/grids, table overflow, full-width mobile buttons, and slot page one-column behavior are present in CSS. Browser layout check still needed. |
 |  |  | Mobile 360-390px |  | Pending |  |
 |  |  | Mobile 414-430px |  | Pending |  |
 |  |  | Tablet 768px |  | Pending |  |
@@ -88,6 +91,12 @@ Check these pages first:
 | 2026-05-28 | Disclosure | Future compensation disclosure clear in source and page loaded in browser | PASS | Static and browser checks passed. |
 | 2026-05-28 | Responsible Play | Safety warnings visible in source and page loaded in browser | PASS | Static and browser checks passed. |
 
+## Static Layout QA Record
+
+| Date | Check | Pass/Fail | Notes |
+|---|---|---|---|
+| 2026-05-28 | Responsive CSS sanity check | PASS / STATIC | Main stylesheet includes mobile menu, one-column grids/footer, table horizontal overflow, full-width buttons, and responsive section spacing. Slot stylesheet collapses the game layout to one column under 900px and stacks controls under 520px. |
+
 ## Pass Criteria Before Promotion
 
 Do not promote or follow up aggressively with partners until:
@@ -102,4 +111,4 @@ Do not promote or follow up aggressively with partners until:
 
 ## Next Step
 
-Run mobile and desktop layout QA using `VISUAL-QA-CHECKLIST.md`.
+Run manual mobile and desktop layout QA using `VISUAL-QA-CHECKLIST.md`.
