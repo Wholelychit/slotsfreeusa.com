@@ -51,7 +51,13 @@ const searchPages = [
     title: 'Bonuses Explained',
     url: 'bonuses.html',
     summary: 'Understand free spins, bonus terms, playthrough language, and offer limits.',
-    keywords: 'bonuses free spins playthrough wagering terms casino offers'
+    keywords: 'bonuses free spins playthrough wagering terms casino offers social casino bonus gold coins sweeps coins'
+  },
+  {
+    title: 'Social Casino Bonus Guide',
+    url: 'social-casino-bonus-guide.html',
+    summary: 'Learn social casino bonus terms, Gold Coins, Sweeps Coins, daily bonuses, free coins, playthrough rules, location limits, and safer checks.',
+    keywords: 'social casino bonus guide social casino bonuses daily bonus free coins gold coins sweeps coins sweepstakes coins playthrough redemption location rules'
   },
   {
     title: 'Reviews Hub',
@@ -80,8 +86,8 @@ const searchPages = [
   {
     title: 'What Are Social Casinos?',
     url: 'what-are-social-casinos.html',
-    summary: 'Learn how virtual coins, credits, and social casino systems usually work.',
-    keywords: 'social casinos virtual coins credits sweepstakes systems beginner gold coins sweeps coins'
+    summary: 'Learn how virtual coins, credits, bonuses, and social casino systems usually work.',
+    keywords: 'social casinos virtual coins credits sweepstakes systems beginner gold coins sweeps coins social casino bonus'
   },
   {
     title: 'Sweepstakes Casino Guide',
@@ -191,7 +197,7 @@ function renderResults() {
     const title = document.createElement('h3');
     title.textContent = 'Try a simpler search';
     const text = document.createElement('p');
-    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, volatility, bonuses, social casinos, sweepstakes, gold coins, sweeps coins, reviews, checklist, contact, or responsible play.';
+    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, volatility, bonuses, social casino bonus, sweepstakes, gold coins, sweeps coins, reviews, checklist, contact, or responsible play.';
     empty.appendChild(title);
     empty.appendChild(text);
     searchResults.appendChild(empty);
