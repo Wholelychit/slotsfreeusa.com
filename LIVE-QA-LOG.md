@@ -1,0 +1,95 @@
+# SlotsFreeUSA Live QA Log
+
+Last updated: 2026-05-28
+
+Use this file to record live-site browser checks after deployment.
+
+This log is separate from `VISUAL-QA-CHECKLIST.md`.
+
+- `VISUAL-QA-CHECKLIST.md` explains what to check.
+- `LIVE-QA-LOG.md` records what was actually checked and what happened.
+
+## Current Status
+
+Live QA is pending.
+
+The codebase passed the non-visual repo audit, and the visual QA checklist exists. A human browser/mobile pass is still required before public promotion, affiliate follow-up, or monetization.
+
+## Do Not Add During QA
+
+Do not add:
+
+- live affiliate links
+- tracking links
+- ad scripts
+- payment tools
+- email capture
+- accounts
+- public AI
+
+QA should test the current public site only.
+
+## Live QA Records
+
+| Date | Tester | Environment | Pages Checked | Result | Notes |
+|---|---|---|---|---|---|
+|  |  | Mobile 360-390px |  | Pending |  |
+|  |  | Mobile 414-430px |  | Pending |  |
+|  |  | Tablet 768px |  | Pending |  |
+|  |  | Desktop 1280px+ |  | Pending |  |
+
+## Required First Live Test
+
+Check these pages first:
+
+1. `https://slotsfreeusa.com/`
+2. `https://slotsfreeusa.com/play-free-slots.html`
+3. `https://slotsfreeusa.com/free-slots.html`
+4. `https://slotsfreeusa.com/no-download-slots.html`
+5. `https://slotsfreeusa.com/search.html`
+6. `https://slotsfreeusa.com/reviews.html`
+7. `https://slotsfreeusa.com/partner-with-us.html`
+8. `https://slotsfreeusa.com/contact.html`
+9. `https://slotsfreeusa.com/privacy.html`
+10. `https://slotsfreeusa.com/terms.html`
+11. `https://slotsfreeusa.com/affiliate-disclosure.html`
+
+## Game Test Record
+
+| Date | Device | Spin Works | Reset Works | Credits Update | No Real-Money Claim | Pass/Fail | Notes |
+|---|---|---|---|---|---|---|---|
+|  |  |  |  |  |  | Pending |  |
+
+## Search Test Record
+
+| Date | Search Term | Expected Result | Actual Result | Pass/Fail | Notes |
+|---|---|---|---|---|---|
+|  | slots | Free slots / play page |  | Pending |  |
+|  | bonus | Bonus / free spins pages |  | Pending |  |
+|  | social | Social casino / sweepstakes pages |  | Pending |  |
+
+## Trust / Legal Test Record
+
+| Date | Page | Check | Pass/Fail | Notes |
+|---|---|---|---|---|
+|  | Contact | `slotsfreeusa@gmail.com` visible | Pending |  |
+|  | Privacy | Current privacy posture clear | Pending |  |
+|  | Terms | Information-only / no gambling operation clear | Pending |  |
+|  | Disclosure | Future compensation disclosure clear | Pending |  |
+|  | Responsible Play | Safety warnings visible | Pending |  |
+
+## Pass Criteria Before Promotion
+
+Do not promote or follow up aggressively with partners until:
+
+- Homepage loads cleanly on mobile and desktop.
+- Free slot game works on mobile and desktop.
+- Search works for basic terms.
+- Footer and navigation are readable on mobile.
+- Contact and partner pages are clear.
+- Responsible-play, terms, privacy, and disclosure pages are reachable.
+- No live monetization is accidentally active.
+
+## Next Step
+
+Run `VISUAL-QA-CHECKLIST.md` in a real browser and record results here.
