@@ -60,6 +60,12 @@ const searchPages = [
     keywords: 'online casino review checklist legal casino checklist social casino checklist age rules location rules bonus terms support safer play disclosure'
   },
   {
+    title: 'Sweeps Coins vs Gold Coins',
+    url: 'sweepstakes-coins-vs-gold-coins.html',
+    summary: 'Learn the plain-English difference between Gold Coins, Sweeps Coins, fun-play credits, promotional rules, location limits, and safer checks.',
+    keywords: 'sweeps coins gold coins sweepstakes coins social casino coins virtual credits promotional coins coin system redemption rules gold coin sweeps coin'
+  },
+  {
     title: 'How We Review',
     url: 'how-we-review.html',
     summary: 'See how SlotsFreeUSA reviews partners before any link goes live.',
@@ -69,13 +75,13 @@ const searchPages = [
     title: 'What Are Social Casinos?',
     url: 'what-are-social-casinos.html',
     summary: 'Learn how virtual coins, credits, and social casino systems usually work.',
-    keywords: 'social casinos virtual coins credits sweepstakes systems beginner'
+    keywords: 'social casinos virtual coins credits sweepstakes systems beginner gold coins sweeps coins'
   },
   {
     title: 'Sweepstakes Casino Guide',
     url: 'sweepstakes-casino-guide.html',
     summary: 'Understand coin types, location rules, redemption terms, and safer checks.',
-    keywords: 'sweepstakes casino guide coins redemption location rules promotional coins'
+    keywords: 'sweepstakes casino guide coins redemption location rules promotional coins gold coins sweeps coins'
   },
   {
     title: 'Responsible Play',
@@ -179,7 +185,7 @@ function renderResults() {
     const title = document.createElement('h3');
     title.textContent = 'Try a simpler search';
     const text = document.createElement('p');
-    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, bonuses, social casinos, sweepstakes, reviews, checklist, contact, or responsible play.';
+    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, bonuses, social casinos, sweepstakes, gold coins, sweeps coins, reviews, checklist, contact, or responsible play.';
     empty.appendChild(title);
     empty.appendChild(text);
     searchResults.appendChild(empty);
