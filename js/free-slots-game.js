@@ -4,8 +4,8 @@
    ==================================================================== */
 
 (function () {
-  const slotSymbols = ['🍒', '🍋', '🔔', 'BAR', '7️⃣'];
-  const payoutTable = {
+  var slotSymbols = ['🍒', '🍋', '🔔', 'BAR', '7️⃣'];
+  var payoutTable = {
     '🍒': 40,
     '🍋': 30,
     '🔔': 80,
@@ -13,16 +13,14 @@
     '7️⃣': 150
   };
 
-  let gameElements = null;
-  let credits = 1000;
-  let spins = 0;
-  let lastWin = 0;
-  let isSpinning = false;
-  let initialized = false;
+  var credits = 1000;
+  var spins = 0;
+  var lastWin = 0;
+  var isSpinning = false;
 
-  function getGameElements() {
+  function els() {
     return {
-      reels: Array.from(document.querySelectorAll('.reel')),
+      reels: Array.prototype.slice.call(document.querySelectorAll('.reel')),
       credits: document.getElementById('credits'),
       spins: document.getElementById('spins'),
       lastWin: document.getElementById('lastWin'),
@@ -32,24 +30,8 @@
     };
   }
 
-  function isGameReady(elements) {
-    return Boolean(
-      elements &&
-      elements.reels.length === 3 &&
-      elements.credits &&
-      elements.spins &&
-      elements.lastWin &&
-      elements.message &&
-      elements.spinButton &&
-      elements.resetButton
-    );
-  }
-
-  function updateStats() {
-    if (!isGameReady(gameElements)) return;
-    gameElements.credits.textContent = credits.toString();
-    gameElements.spins.textContent = spins.toString();
-    gameElements.lastWin.textContent = lastWin.toString();
+  function ready(e) {
+    return e.reels.length === 3 && e.credits && e.spins && e.lastWin && e.message;
   }
 
   function pickSymbol() {
@@ -57,13 +39,11 @@
   }
 
   function scoreSpin(results) {
-    const [a, b, c] = results;
-
-    if (a === b && b === c) {
-      return payoutTable[a] || 75;
+    if (results[0] === results[1] && results[1] === results[2]) {
+      return payoutTable[results[0]] || 75;
     }
 
-    if (a === b || b === c || a === c) {
+    if (results[0] === results[1] || results[1] === results[2] || results[0] === results[2]) {
       return 10;
     }
 
@@ -72,42 +52,58 @@
 
   function setReelText(reel, symbol) {
     reel.textContent = symbol;
-    reel.classList.toggle('bar-symbol', symbol === 'BAR');
+    if (symbol === 'BAR') {
+      reel.classList.add('bar-symbol');
+    } else {
+      reel.classList.remove('bar-symbol');
+    }
   }
 
-  function spin() {
-    if (!isGameReady(gameElements)) {
-      gameElements = getGameElements();
-    }
+  function updateStats(e) {
+    if (!ready(e)) return;
+    e.credits.textContent = String(credits);
+    e.spins.textContent = String(spins);
+    e.lastWin.textContent = String(lastWin);
+  }
 
-    if (!isGameReady(gameElements) || isSpinning) return;
+  function doSpin(event) {
+    if (event && event.preventDefault) event.preventDefault();
 
-    const bet = 10;
+    var e = els();
+    if (!ready(e) || isSpinning) return false;
+
+    var bet = 10;
 
     if (credits < bet) {
-      gameElements.message.textContent = 'Out of virtual credits. Press Reset to play again for free.';
-      return;
+      e.message.textContent = 'Out of virtual credits. Press Reset to play again for free.';
+      return false;
     }
 
     credits -= bet;
     spins += 1;
     isSpinning = true;
-    gameElements.spinButton.disabled = true;
-    gameElements.message.textContent = 'Reels spinning...';
-    gameElements.reels.forEach((reel) => reel.classList.add('spinning'));
 
-    let animationCount = 0;
-    const animation = setInterval(() => {
-      gameElements.reels.forEach((reel) => {
+    if (e.spinButton) e.spinButton.disabled = true;
+    e.message.textContent = 'Reels spinning...';
+
+    e.reels.forEach(function (reel) {
+      reel.classList.add('spinning');
+    });
+
+    var animationCount = 0;
+    var animation = window.setInterval(function () {
+      e.reels.forEach(function (reel) {
         setReelText(reel, pickSymbol());
       });
 
       animationCount += 1;
-      if (animationCount >= 16) {
-        clearInterval(animation);
-        const results = gameElements.reels.map(() => pickSymbol());
 
-        gameElements.reels.forEach((reel, index) => {
+      if (animationCount >= 12) {
+        window.clearInterval(animation);
+
+        var results = [pickSymbol(), pickSymbol(), pickSymbol()];
+
+        e.reels.forEach(function (reel, index) {
           reel.classList.remove('spinning');
           setReelText(reel, results[index]);
         });
@@ -116,59 +112,76 @@
         credits += lastWin;
 
         if (lastWin >= 100) {
-          gameElements.message.textContent = `Big free-play hit: ${lastWin} virtual credits.`;
+          e.message.textContent = 'Big free-play hit: ' + lastWin + ' virtual credits.';
         } else if (lastWin > 0) {
-          gameElements.message.textContent = `Free-play win: ${lastWin} virtual credits.`;
+          e.message.textContent = 'Free-play win: ' + lastWin + ' virtual credits.';
         } else {
-          gameElements.message.textContent = 'No match this spin. Try again for fun.';
+          e.message.textContent = 'No match this spin. Try again for fun.';
         }
 
-        updateStats();
+        updateStats(e);
         isSpinning = false;
-        gameElements.spinButton.disabled = false;
+        if (e.spinButton) e.spinButton.disabled = false;
       }
     }, 65);
+
+    return false;
   }
 
-  function resetGame() {
-    if (!isGameReady(gameElements)) {
-      gameElements = getGameElements();
-    }
+  function doReset(event) {
+    if (event && event.preventDefault) event.preventDefault();
 
-    if (!isGameReady(gameElements)) return;
+    var e = els();
+    if (!ready(e)) return false;
 
     credits = 1000;
     spins = 0;
     lastWin = 0;
     isSpinning = false;
 
-    const startingSymbols = ['7️⃣', '🍒', '🔔'];
-    gameElements.reels.forEach((reel, index) => {
+    var startingSymbols = ['7️⃣', '🍒', '🔔'];
+
+    e.reels.forEach(function (reel, index) {
       reel.classList.remove('spinning');
       setReelText(reel, startingSymbols[index]);
     });
 
-    gameElements.message.textContent = 'Virtual credits reset. No real money is used.';
-    updateStats();
-    gameElements.spinButton.disabled = false;
+    e.message.textContent = 'Virtual credits reset. No real money is used.';
+    updateStats(e);
+    if (e.spinButton) e.spinButton.disabled = false;
+
+    return false;
   }
 
   function initSlotGame() {
-    if (initialized) return;
+    var e = els();
+    if (!ready(e)) return;
 
-    gameElements = getGameElements();
+    if (e.spinButton) {
+      e.spinButton.onclick = doSpin;
+      e.spinButton.disabled = false;
+    }
 
-    if (!isGameReady(gameElements)) return;
+    if (e.resetButton) {
+      e.resetButton.onclick = doReset;
+    }
 
-    initialized = true;
-    gameElements.spinButton.addEventListener('click', spin);
-    gameElements.resetButton.addEventListener('click', resetGame);
-    resetGame();
+    doReset();
   }
 
+  document.addEventListener('click', function (event) {
+    if (event.target && event.target.id === 'spinButton') {
+      doSpin(event);
+    }
+
+    if (event.target && event.target.id === 'resetButton') {
+      doReset(event);
+    }
+  });
+
   window.slotsFreeUSA = window.slotsFreeUSA || {};
-  window.slotsFreeUSA.spin = spin;
-  window.slotsFreeUSA.resetGame = resetGame;
+  window.slotsFreeUSA.spin = doSpin;
+  window.slotsFreeUSA.resetGame = doReset;
   window.slotsFreeUSA.initSlotGame = initSlotGame;
 
   if (document.readyState === 'loading') {
