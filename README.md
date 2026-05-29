@@ -1,19 +1,21 @@
 # SlotsFreeUSA
 
-SlotsFreeUSA is a mobile-first information website for free slot-style entertainment, social casino reviews, bonus explainers, and safer play education.
+SlotsFreeUSA is a commercial, mobile-first affiliate and media website for free slot-style entertainment, sweepstakes casino guides, social casino reviews, bonus explainers, partner comparisons, and safer-play information for adults 21+.
 
 ## Purpose
 
 Build a profitable, trustworthy website through:
 
 - SEO traffic
-- display advertising
-- partner links
+- affiliate partner links after approval
+- CPA, RevShare, and hybrid deals
+- display advertising after privacy/disclosure checks
 - sponsored placements
-- educational guides
+- featured partner placements
+- educational guides that support commercial intent
 - email list growth later, after consent and privacy setup
 
-The site does not operate gambling, accept bets, process payments, or promise winnings.
+The site does not operate gambling, accept bets, process payments, issue prizes, redeem prizes, process withdrawals, or promise winnings.
 
 ## Public Contact
 
@@ -62,6 +64,8 @@ No React, no Vite, no build tools, and no unnecessary framework complexity.
 - `DEPLOYMENT-NOTES.md`
 - `MANUAL-QA-CHECKLIST.md`
 - `PARTNER-CHECKLIST.md`
+- `FOCUS-COMMERCIAL-POSITIONING.md`
+- `PARTNER-OUTREACH-LETTERS.md`
 - `AFFILIATE-APPLICATION-TRACKER.md`
 - `AFFILIATE-APPLICATION-FORM-ANSWERS.md`
 - `AFFILIATE-SUBMISSION-LOG.md`
@@ -70,6 +74,7 @@ No React, no Vite, no build tools, and no unnecessary framework complexity.
 
 ## Brand Direction
 
+- commercial affiliate/media site
 - simple
 - trustworthy
 - mobile-first
@@ -77,6 +82,7 @@ No React, no Vite, no build tools, and no unnecessary framework complexity.
 - readable
 - dark navy and gold style
 - honest about risk
+- clear about partner monetization
 
 ## Website Independence Rule
 
