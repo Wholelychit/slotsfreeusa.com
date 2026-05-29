@@ -18,13 +18,18 @@ SlotsFreeUSA is a commercial affiliate/media site, not a charity site. Keep the 
 
 Safe production build continued on 2026-05-29.
 
-Completed in the latest build batch:
+Completed in the latest build batches:
 
-- Added `online-casino-review-checklist.html` as a new evergreen trust/SEO page.
-- Added FAQ schema, title, meta description, canonical URL, disclosure bar, mobile navigation, footer, and safe compliance language to the new checklist page.
-- Linked the checklist from `reviews.html` hero buttons, review category card, bottom trust card, and footer.
-- Added the checklist page to `js/site-search.js` so static search can find it by checklist, legal casino, social casino, age rules, location rules, bonus terms, support, safer play, and disclosure terms.
-- Added the checklist page to `sitemap.xml` and updated 2026-05-29 lastmod entries for changed public pages.
+- Added `online-casino-review-checklist.html` as an evergreen trust/SEO page.
+- Added FAQ schema, title, meta description, canonical URL, disclosure bar, mobile navigation, footer, and safe compliance language to the review checklist page.
+- Linked the review checklist from `reviews.html` hero buttons, review category card, bottom trust card, and footer.
+- Added the review checklist page to `js/site-search.js` and `sitemap.xml`.
+- Added `sweepstakes-coins-vs-gold-coins.html` as an evergreen social casino SEO/support page.
+- Added FAQ schema, title, meta description, canonical URL, disclosure bar, mobile navigation, footer, comparison table, beginner checklist, and safe compliance language to the coins guide.
+- Linked the coins guide from `what-are-social-casinos.html` hero buttons, social casino basics cards, comparison table copy, best-next-pages section, and footer.
+- Linked the coins guide from `sweepstakes-casino-guide.html` hero buttons, sweepstakes basics card, checklist copy, best-next-pages section, and footer.
+- Added the coins guide to `js/site-search.js` so static search can find Gold Coins, Sweeps Coins, Sweepstakes Coins, coin systems, promotional coins, redemption rules, and social casino coin searches.
+- Added the coins guide to `sitemap.xml` and updated 2026-05-29 lastmod entries for changed public pages.
 
 ## Completed workflow setup
 
@@ -65,10 +70,10 @@ Completed in the latest build batch:
    - safe content pages and disclosure pages
 
 4. Good next safe content pages:
-   - `best-online-slots-guide.html`
-   - `social-casino-bonus-guide.html`
    - `slot-volatility-explained.html`
-   - `sweepstakes-coins-vs-gold-coins.html`
+   - `social-casino-bonus-guide.html`
+   - `best-online-slots-guide.html`
+   - `mobile-slots-guide.html`
 
 ## Stop points
 
