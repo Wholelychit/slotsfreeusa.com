@@ -31,7 +31,7 @@ Related workflow files:
 | Priority | Partner | Path | Status | Action |
 |---|---|---|---|---|
 | 1 | BetMGM Partners | Official BetMGM Partners portal | Ready | Register/apply using `AFFILIATE-APPLICATION-FORM-ANSWERS.md`; then record confirmation and schedule follow-up. |
-| 2 | B2Spin / SpinBlitz | Gmail draft to support@b2spin.com | Draft ready - not sent | Review/send saved Gmail draft from `slotsfreeusa@gmail.com`; then record send date and schedule follow-up. |
+| 2 | B2Spin / SpinBlitz | Email to support@b2spin.com | Sent 2026-05-28 | Wait for reply; send one follow-up on 2026-06-05 only if no reply. |
 | 3 | Rush Street Interactive / BetRivers | Official RSI contact form | Ready | Ask for correct affiliate/media partner application path; then record reply path before applying. |
 | 4 | Caesars | Not verified | Hold | Do not submit until an official Caesars-controlled affiliate path is verified. |
 
@@ -40,7 +40,7 @@ Related workflow files:
 | Date Sent | Partner | Method | Status After Sending | Confirmation / Reply Path | Follow-Up Window | Planned Follow-Up Date | Notes |
 |---|---|---|---|---|---|---|---|
 |  | BetMGM Partners | Portal registration | Not sent yet |  | 5 to 7 business days after submit |  | Apply at official BetMGM Partners portal only. |
-| 2026-05-28 draft created, not sent | B2Spin / SpinBlitz | Gmail draft to support@b2spin.com | Draft ready - not sent | Gmail draft created successfully; no send confirmation yet | Do not schedule until actually sent |  | Draft subject: Partnership Inquiry — SlotsFreeUSA.com / SpinBlitz. Review/send from `slotsfreeusa@gmail.com`. |
+| 2026-05-28 | B2Spin / SpinBlitz | Email to support@b2spin.com | Sent | Gmail sent message recorded in sent mail | 2026-06-04 to 2026-06-08 | 2026-06-05 | Subject: Partnership Inquiry — SlotsFreeUSA.com / SpinBlitz. Do not send repeated follow-ups. |
 |  | RSI / BetRivers | Official RSI contact form | Not sent yet |  | 5 to 7 business days after submit |  | Ask for correct affiliate/media partner contact. |
 |  | Caesars | Not verified | Hold |  | Hold | Hold | No guessed portals or third-party pages. |
 
