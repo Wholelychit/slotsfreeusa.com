@@ -100,6 +100,32 @@ Issues fixed:
 
 - Normalized `contact.html` footer links to match the consolidated footer structure used across the rest of the site.
 
+## Live QA Status - 2026-05-28
+
+Status: PARTIAL PASS. Core live QA passed. Manual mobile and desktop layout checks remain.
+
+Passed live/browser checks:
+
+- `https://slotsfreeusa.com/` loaded.
+- Gerry reported five checked live pages passed.
+- `play-free-slots.html` game Spin initially failed, was patched, and then passed.
+- Reset passed after the slot game patch.
+- Search passed for `slots`, `bonus`, and `social`.
+- Browser trust/legal pages passed: Contact, Privacy, Terms, Affiliate Disclosure, and Responsible Play.
+
+Passed static repo checks:
+
+- Responsive CSS sanity check passed for mobile menu, grid/card stacking, footer stacking, table overflow, full-width mobile buttons, and Classic Vegas one-column behavior.
+- Mobile menu JavaScript check passed: menu toggles, `aria-expanded` updates, nav links close the menu, and Escape closes the menu.
+- Trust/legal source checks passed for contact email, future-only tracking/affiliate disclosure language, no gambling operation language, and responsible-play safety warnings.
+
+Remaining live QA:
+
+- Manual mobile 360-390px layout check.
+- Manual mobile 414-430px layout check.
+- Manual tablet 768px layout check.
+- Manual desktop 1280px+ layout check.
+
 ## Files / Pages Complete
 
 - Homepage with disclosure bar, SEO metadata, Open Graph tags, schema markup, navigation, free-play and trust positioning.
@@ -111,11 +137,12 @@ Issues fixed:
 - Affiliate workflow docs and approval gate docs.
 - Visual QA checklist for mobile, desktop, game, search, footer, trust, and partner-readiness review.
 - Next action runbook for visual QA, affiliate submissions, approval gates, and post-approval safety checks.
+- Live QA log with live page, game, search, trust/legal, and static layout checks.
 
 ## Files / Pages Needing Work
 
-- No required safe file fixes remain from the non-visual audit.
-- Full mobile/desktop visual QA still needs a browser pass before public promotion or partner follow-up.
+- No required safe file fixes remain from the non-visual audit or current live QA.
+- Manual mobile/desktop browser layout QA still needs to be completed before public promotion or partner follow-up.
 - Future SEO expansion can continue only after the affiliate workflow docs remain current.
 - Partner review cards, ads, affiliate links, tracking links, and email signup must remain inactive until approval and privacy/disclosure checks are complete.
 
@@ -124,6 +151,7 @@ Issues fixed:
 - Public pages checked have titles, meta descriptions, canonical URLs, H1s, crawlable internal links, and trust language.
 - Sitemap includes the current public page set.
 - Search page and `js/site-search.js` include the public guide/trust pages.
+- Search was browser-tested for `slots`, `bonus`, and `social` and passed.
 - No new SEO page is required from this audit pass.
 
 ## Sitemap / Robots Status
@@ -137,10 +165,12 @@ Issues fixed:
 - Footers are present on all checked public HTML pages.
 - `contact.html` footer was normalized during this audit to match the consolidated footer pattern.
 - No duplicate footer navigation blocks were found in the checked public pages.
+- Mobile menu JavaScript has been statically checked and includes open/close, `aria-expanded`, link-close, and Escape-close behavior.
 
 ## Trust / Legal Status
 
 - Privacy, terms, affiliate disclosure, responsible play, how-we-review, partner-with-us, and contact pages exist.
+- Browser trust/legal check passed for Contact, Privacy, Terms, Affiliate Disclosure, and Responsible Play.
 - Pages consistently state that SlotsFreeUSA does not operate gambling, accept bets, process payments, manage outside accounts, issue payouts, or promise winnings.
 - Contact email is `slotsfreeusa@gmail.com`.
 
@@ -155,8 +185,13 @@ Issues fixed:
 - Non-visual Universal Codex Repo Audit Workflow passed on 2026-05-28 after the footer consistency fix.
 - `VISUAL-QA-CHECKLIST.md` was added on 2026-05-28 to guide browser/mobile review before public promotion or partner follow-up.
 - `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` was added on 2026-05-28 to define the exact sequence for visual QA, affiliate applications, approval gate checks, and future content growth.
+- `LIVE-QA-LOG.md` records actual browser tests.
 - Initial live browser QA passed on 2026-05-28: `https://slotsfreeusa.com/` loaded and Gerry reported five checked pages passed.
-- Fuller mobile, desktop, game, search, and trust-page QA remains pending.
+- Free slot game Spin initially failed, was patched, then passed. Reset passed.
+- Search passed for `slots`, `bonus`, and `social`.
+- Browser trust/legal pages passed.
+- Static responsive CSS and mobile menu JavaScript checks passed.
+- Manual mobile and desktop layout QA remains pending.
 - Partner-application workflow remains blocked by account/login/private business decision requirements, not by the codebase.
 
 ## Safe Build Queue Review
@@ -183,7 +218,7 @@ Completed checks and safe work:
 - Added `VISUAL-QA-CHECKLIST.md` for mobile, desktop, free-slot-game, static-search, trust-page, footer, legal, and promotion-readiness checks.
 - Added `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` to prevent random extra build work and keep the next actions focused on visual QA, affiliate submissions, approval gates, and safe future SEO growth.
 - Added `LIVE-QA-LOG.md` to record actual live browser tests.
-- Recorded the first live QA pass in `LIVE-QA-LOG.md`: main domain and five checked pages passed.
+- Recorded live QA: main domain and five checked pages passed, Spin fixed, Reset passed, search passed, trust/legal passed, static layout passed, and static mobile menu check passed.
 
 ## Current Affiliate Workflow Status
 
@@ -221,7 +256,7 @@ Completed checks and safe work:
 ## Known Blockers
 
 - Local shell does not have `git` available, so this session used the GitHub connector for direct file commits.
-- Full browser/mobile visual QA is still pending and should use `VISUAL-QA-CHECKLIST.md` and `LIVE-QA-LOG.md`.
+- Manual mobile/desktop visual QA is still pending and should use `VISUAL-QA-CHECKLIST.md` and `LIVE-QA-LOG.md`.
 - Separate `css/search.css` creation was previously blocked by the connector safety filter. Search page styling remains inline.
 - Actual affiliate application submission may require official portal login, affiliate account setup, business details, tax/payment details, or partner-manager approval.
 - BetMGM application cannot be marked submitted until the official portal submission is completed.
@@ -231,12 +266,10 @@ Completed checks and safe work:
 
 ## Next Safe Queue
 
-1. Finish browser/mobile visual QA using `VISUAL-QA-CHECKLIST.md` and record results in `LIVE-QA-LOG.md`.
-2. Test `play-free-slots.html`: spin button, reset button, virtual credits, last win, no real-money claim.
-3. Test `search.html`: search `slots`, `bonus`, and `social`.
-4. Confirm trust/legal pages: contact, privacy, terms, disclosure, responsible play.
-5. Use `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` for the exact next sequence.
-6. Apply/register at BetMGM Partners through the official portal, then record the result in `AFFILIATE-SUBMISSION-LOG.md`.
-7. Send B2Spin / SpinBlitz email from `slotsfreeusa@gmail.com`, then record the result.
-8. Submit RSI / BetRivers contact form, then record the result.
-9. Keep all monetization inactive until approval and disclosure checks are complete.
+1. Finish manual mobile and desktop visual QA using `VISUAL-QA-CHECKLIST.md` and record results in `LIVE-QA-LOG.md`.
+2. If mobile and desktop layout pass, move to affiliate applications using `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md`.
+3. Apply/register at BetMGM Partners through the official portal, then record the result in `AFFILIATE-SUBMISSION-LOG.md`.
+4. Send B2Spin / SpinBlitz email from `slotsfreeusa@gmail.com`, then record the result.
+5. Submit RSI / BetRivers contact form, then record the result.
+6. Keep Caesars on hold until a verified official path is found.
+7. Keep all monetization inactive until approval and disclosure checks are complete.
