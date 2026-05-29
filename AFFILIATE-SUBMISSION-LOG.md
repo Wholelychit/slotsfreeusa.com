@@ -2,7 +2,7 @@
 
 Last updated: 2026-05-28
 
-Use this file after each affiliate application, contact form, or partner email is sent or attempted.
+Use this file after each affiliate application, contact form, partner email draft, or partner email send.
 
 Public contact email: `slotsfreeusa@gmail.com`
 
@@ -24,13 +24,14 @@ Related workflow files:
 5. If rejected, mark rejected and do not keep sending repeated messages.
 6. Keep Caesars on hold until an official verified affiliate path is found.
 7. If an email or portal action is blocked, record it as attempted but not sent.
+8. If a Gmail draft is created but not sent, record it as draft ready and do not schedule follow-up until sent.
 
 ## Current Submission Queue
 
 | Priority | Partner | Path | Status | Action |
 |---|---|---|---|---|
 | 1 | BetMGM Partners | Official BetMGM Partners portal | Ready | Register/apply using `AFFILIATE-APPLICATION-FORM-ANSWERS.md`; then record confirmation and schedule follow-up. |
-| 2 | B2Spin / SpinBlitz | Email to support@b2spin.com | Ready - draft blocked before send | Use `PARTNER-OUTREACH-LETTERS.md`; send manually from `slotsfreeusa@gmail.com` if needed; then record send date and schedule follow-up. |
+| 2 | B2Spin / SpinBlitz | Gmail draft to support@b2spin.com | Draft ready - not sent | Review/send saved Gmail draft from `slotsfreeusa@gmail.com`; then record send date and schedule follow-up. |
 | 3 | Rush Street Interactive / BetRivers | Official RSI contact form | Ready | Ask for correct affiliate/media partner application path; then record reply path before applying. |
 | 4 | Caesars | Not verified | Hold | Do not submit until an official Caesars-controlled affiliate path is verified. |
 
@@ -39,7 +40,7 @@ Related workflow files:
 | Date Sent | Partner | Method | Status After Sending | Confirmation / Reply Path | Follow-Up Window | Planned Follow-Up Date | Notes |
 |---|---|---|---|---|---|---|---|
 |  | BetMGM Partners | Portal registration | Not sent yet |  | 5 to 7 business days after submit |  | Apply at official BetMGM Partners portal only. |
-| 2026-05-28 attempted, not sent | B2Spin / SpinBlitz | Email to support@b2spin.com | Draft/send blocked by Gmail safety layer before sending | No confirmation because no email was sent | Do not schedule until actually sent |  | Outreach copy is ready in `PARTNER-OUTREACH-LETTERS.md`; send from `slotsfreeusa@gmail.com` manually if needed. |
+| 2026-05-28 draft created, not sent | B2Spin / SpinBlitz | Gmail draft to support@b2spin.com | Draft ready - not sent | Gmail draft created successfully; no send confirmation yet | Do not schedule until actually sent |  | Draft subject: Partnership Inquiry — SlotsFreeUSA.com / SpinBlitz. Review/send from `slotsfreeusa@gmail.com`. |
 |  | RSI / BetRivers | Official RSI contact form | Not sent yet |  | 5 to 7 business days after submit |  | Ask for correct affiliate/media partner contact. |
 |  | Caesars | Not verified | Hold |  | Hold | Hold | No guessed portals or third-party pages. |
 
