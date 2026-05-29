@@ -8,8 +8,8 @@ const searchPages = [
   {
     title: 'Free Slots Guide',
     url: 'free-slots.html',
-    summary: 'Learn basic slot types, free-play habits, and no-download game options.',
-    keywords: 'free slots no download slot types fruit slots classic slots beginner'
+    summary: 'Learn basic slot types, free-play habits, no-download game options, and slot volatility basics.',
+    keywords: 'free slots no download slot types fruit slots classic slots beginner volatility'
   },
   {
     title: 'No Download Slots',
@@ -20,8 +20,14 @@ const searchPages = [
   {
     title: 'Slot Terms Explained',
     url: 'slot-terms-explained.html',
-    summary: 'Learn reels, paylines, symbols, wilds, scatters, free spins, and bonus rules in plain English.',
-    keywords: 'slot terms reels paylines symbols wilds scatters free spins bonus rounds playthrough glossary'
+    summary: 'Learn reels, paylines, symbols, wilds, scatters, free spins, volatility, RTP, and bonus rules in plain English.',
+    keywords: 'slot terms reels paylines symbols wilds scatters free spins bonus rounds playthrough glossary volatility rtp'
+  },
+  {
+    title: 'Slot Volatility Explained',
+    url: 'slot-volatility-explained.html',
+    summary: 'Learn low, medium, and high slot volatility, why volatility does not predict the next spin, and how beginners can play more carefully.',
+    keywords: 'slot volatility explained low volatility medium volatility high volatility rtp variance risk dry spell beginner slots'
   },
   {
     title: 'Free Spins Explained',
@@ -185,7 +191,7 @@ function renderResults() {
     const title = document.createElement('h3');
     title.textContent = 'Try a simpler search';
     const text = document.createElement('p');
-    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, bonuses, social casinos, sweepstakes, gold coins, sweeps coins, reviews, checklist, contact, or responsible play.';
+    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, volatility, bonuses, social casinos, sweepstakes, gold coins, sweeps coins, reviews, checklist, contact, or responsible play.';
     empty.appendChild(title);
     empty.appendChild(text);
     searchResults.appendChild(empty);
