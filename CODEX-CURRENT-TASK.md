@@ -36,6 +36,12 @@ Completed in the latest build batches:
 - Linked the volatility guide from `free-slots.html` hero buttons, guide card grid, visitor safety note, and footer.
 - Added the volatility guide to `js/site-search.js` so static search can find low volatility, medium volatility, high volatility, RTP, variance, dry spell, and risk terms.
 - Added the volatility guide to `sitemap.xml` and updated 2026-05-29 lastmod entries for changed public pages.
+- Added `social-casino-bonus-guide.html` as an evergreen social casino bonus education page.
+- Added FAQ schema, title, meta description, canonical URL, disclosure bar, mobile navigation, footer, offer comparison table, green/red flag cards, bonus checklist, and safe compliance language to the social casino bonus guide.
+- Linked the social casino bonus guide from `bonuses.html` hero buttons, common bonus cards, comparison table, bottom education card, and footer.
+- Linked the social casino bonus guide from `what-are-social-casinos.html` hero buttons, offer card, social casino comparison table, bottom education card, best-next-pages section, and footer.
+- Added the social casino bonus guide to `js/site-search.js` so static search can find social casino bonus, daily bonus, free coins, Gold Coins, Sweeps Coins, Sweepstakes Coins, playthrough, redemption, and location-rule searches.
+- Added the social casino bonus guide to `sitemap.xml` and updated 2026-05-29 lastmod entries for changed public pages.
 
 ## Completed workflow setup
 
@@ -76,10 +82,10 @@ Completed in the latest build batches:
    - safe content pages and disclosure pages
 
 4. Good next safe content pages:
-   - `social-casino-bonus-guide.html`
    - `best-online-slots-guide.html`
    - `mobile-slots-guide.html`
    - `slot-rtp-explained.html`
+   - `slot-paylines-explained.html`
 
 ## Stop points
 
