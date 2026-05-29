@@ -19,7 +19,9 @@ Reset also passed after the fix.
 
 Search passed for `social`, `bonus`, and `slots`.
 
-A fuller mobile, desktop, and trust-page QA pass is still required before public promotion, affiliate follow-up, or monetization.
+Repo-side trust/legal static check passed for Contact, Privacy, Terms, Affiliate Disclosure, and Responsible Play. Browser load check for those pages remains pending.
+
+A fuller mobile, desktop, and browser trust-page QA pass is still required before public promotion, affiliate follow-up, or monetization.
 
 ## Do Not Add During QA
 
@@ -80,11 +82,11 @@ Check these pages first:
 
 | Date | Page | Check | Pass/Fail | Notes |
 |---|---|---|---|---|
-|  | Contact | `slotsfreeusa@gmail.com` visible | Pending |  |
-|  | Privacy | Current privacy posture clear | Pending |  |
-|  | Terms | Information-only / no gambling operation clear | Pending |  |
-|  | Disclosure | Future compensation disclosure clear | Pending |  |
-|  | Responsible Play | Safety warnings visible | Pending |  |
+| 2026-05-28 | Contact | `slotsfreeusa@gmail.com` visible in source | PASS / STATIC | Browser load still pending. |
+| 2026-05-28 | Privacy | Current privacy posture clear in source | PASS / STATIC | States analytics/tracking/email signup are future/not active. Browser load still pending. |
+| 2026-05-28 | Terms | Information-only / no gambling operation clear in source | PASS / STATIC | States no casino operation, bets, payments, accounts, or guaranteed winnings. Browser load still pending. |
+| 2026-05-28 | Disclosure | Future compensation disclosure clear in source | PASS / STATIC | States future ads/partner links and review rules. Browser load still pending. |
+| 2026-05-28 | Responsible Play | Safety warnings visible in source | PASS / STATIC | Includes stop signs, safer habits, and 1-800-GAMBLER. Browser load still pending. |
 
 ## Pass Criteria Before Promotion
 
@@ -100,6 +102,6 @@ Do not promote or follow up aggressively with partners until:
 
 ## Next Step
 
-Check trust/legal pages: Contact, Privacy, Terms, Disclosure, and Responsible Play.
+Browser-check trust/legal pages: Contact, Privacy, Terms, Disclosure, and Responsible Play.
 
 Continue `VISUAL-QA-CHECKLIST.md` in a real browser and record results here.
