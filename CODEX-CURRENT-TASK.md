@@ -42,6 +42,12 @@ Completed in the latest build batches:
 - Linked the social casino bonus guide from `what-are-social-casinos.html` hero buttons, offer card, social casino comparison table, bottom education card, best-next-pages section, and footer.
 - Added the social casino bonus guide to `js/site-search.js` so static search can find social casino bonus, daily bonus, free coins, Gold Coins, Sweeps Coins, Sweepstakes Coins, playthrough, redemption, and location-rule searches.
 - Added the social casino bonus guide to `sitemap.xml` and updated 2026-05-29 lastmod entries for changed public pages.
+- Added `best-online-slots-guide.html` as an evergreen beginner slot-selection and safer comparison page.
+- Added FAQ schema, title, meta description, canonical URL, disclosure bar, mobile navigation, footer, comparison table, slot checklist, and safe compliance language to the best online slots guide.
+- Linked the best online slots guide from `free-slots.html` hero buttons, guide card grid, visitor safety note, and footer.
+- Linked the best online slots guide from `reviews.html` hero buttons, review category card, review scorecard, bottom education card, and footer.
+- Added the best online slots guide to `js/site-search.js` using neutral slot-selection language so static search can find online slot comparison, mobile layout, volatility, RTP, free-play mode, bonus terms, and safer-play searches.
+- Added the best online slots guide to `sitemap.xml` and updated 2026-05-29 lastmod entries for changed public pages.
 
 ## Completed workflow setup
 
@@ -82,10 +88,10 @@ Completed in the latest build batches:
    - safe content pages and disclosure pages
 
 4. Good next safe content pages:
-   - `best-online-slots-guide.html`
    - `mobile-slots-guide.html`
    - `slot-rtp-explained.html`
    - `slot-paylines-explained.html`
+   - `classic-slots-vs-video-slots.html`
 
 ## Stop points
 
