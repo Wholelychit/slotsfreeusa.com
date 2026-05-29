@@ -115,7 +115,7 @@ Issues fixed:
 ## Files / Pages Needing Work
 
 - No required safe file fixes remain from the non-visual audit.
-- Visual QA still needs a browser pass before public launch or partner promotion.
+- Full mobile/desktop visual QA still needs a browser pass before public promotion or partner follow-up.
 - Future SEO expansion can continue only after the affiliate workflow docs remain current.
 - Partner review cards, ads, affiliate links, tracking links, and email signup must remain inactive until approval and privacy/disclosure checks are complete.
 
@@ -155,7 +155,8 @@ Issues fixed:
 - Non-visual Universal Codex Repo Audit Workflow passed on 2026-05-28 after the footer consistency fix.
 - `VISUAL-QA-CHECKLIST.md` was added on 2026-05-28 to guide browser/mobile review before public promotion or partner follow-up.
 - `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` was added on 2026-05-28 to define the exact sequence for visual QA, affiliate applications, approval gate checks, and future content growth.
-- Browser/mobile visual QA remains pending.
+- Initial live browser QA passed on 2026-05-28: `https://slotsfreeusa.com/` loaded and Gerry reported five checked pages passed.
+- Fuller mobile, desktop, game, search, and trust-page QA remains pending.
 - Partner-application workflow remains blocked by account/login/private business decision requirements, not by the codebase.
 
 ## Safe Build Queue Review
@@ -181,6 +182,8 @@ Completed checks and safe work:
 - Updated `README.md` to list the affiliate workflow docs and approval checklist.
 - Added `VISUAL-QA-CHECKLIST.md` for mobile, desktop, free-slot-game, static-search, trust-page, footer, legal, and promotion-readiness checks.
 - Added `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` to prevent random extra build work and keep the next actions focused on visual QA, affiliate submissions, approval gates, and safe future SEO growth.
+- Added `LIVE-QA-LOG.md` to record actual live browser tests.
+- Recorded the first live QA pass in `LIVE-QA-LOG.md`: main domain and five checked pages passed.
 
 ## Current Affiliate Workflow Status
 
@@ -218,7 +221,7 @@ Completed checks and safe work:
 ## Known Blockers
 
 - Local shell does not have `git` available, so this session used the GitHub connector for direct file commits.
-- Browser/mobile visual QA is still pending and should use `VISUAL-QA-CHECKLIST.md`.
+- Full browser/mobile visual QA is still pending and should use `VISUAL-QA-CHECKLIST.md` and `LIVE-QA-LOG.md`.
 - Separate `css/search.css` creation was previously blocked by the connector safety filter. Search page styling remains inline.
 - Actual affiliate application submission may require official portal login, affiliate account setup, business details, tax/payment details, or partner-manager approval.
 - BetMGM application cannot be marked submitted until the official portal submission is completed.
@@ -228,9 +231,12 @@ Completed checks and safe work:
 
 ## Next Safe Queue
 
-1. Run browser/mobile visual QA using `VISUAL-QA-CHECKLIST.md`.
-2. Use `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` for the exact next sequence.
-3. Apply/register at BetMGM Partners through the official portal, then record the result in `AFFILIATE-SUBMISSION-LOG.md`.
-4. Send B2Spin / SpinBlitz email from `slotsfreeusa@gmail.com`, then record the result.
-5. Submit RSI / BetRivers contact form, then record the result.
-6. Keep all monetization inactive until approval and disclosure checks are complete.
+1. Finish browser/mobile visual QA using `VISUAL-QA-CHECKLIST.md` and record results in `LIVE-QA-LOG.md`.
+2. Test `play-free-slots.html`: spin button, reset button, virtual credits, last win, no real-money claim.
+3. Test `search.html`: search `slots`, `bonus`, and `social`.
+4. Confirm trust/legal pages: contact, privacy, terms, disclosure, responsible play.
+5. Use `SLOTSFREEUSA-NEXT-ACTION-RUNBOOK.md` for the exact next sequence.
+6. Apply/register at BetMGM Partners through the official portal, then record the result in `AFFILIATE-SUBMISSION-LOG.md`.
+7. Send B2Spin / SpinBlitz email from `slotsfreeusa@gmail.com`, then record the result.
+8. Submit RSI / BetRivers contact form, then record the result.
+9. Keep all monetization inactive until approval and disclosure checks are complete.
