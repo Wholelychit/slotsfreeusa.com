@@ -15,6 +15,8 @@ Initial live browser check passed for the main domain and five checked pages.
 
 The first live game check found that the Spin button was not working. The game script was patched twice: first to harden DOM-ready initialization, then to use a simpler delegated click handler and cache-busted script URL. Gerry retested and reported Spin fixed.
 
+Reset also passed after the fix.
+
 A fuller mobile, desktop, search, and trust-page QA pass is still required before public promotion, affiliate follow-up, or monetization.
 
 ## Do Not Add During QA
@@ -62,7 +64,7 @@ Check these pages first:
 | Date | Device | Spin Works | Reset Works | Credits Update | No Real-Money Claim | Pass/Fail | Notes |
 |---|---|---|---|---|---|---|---|
 | 2026-05-28 | Browser | No | Pending | Pending | Yes | FAIL | Gerry reported Spin not working during first live game check. |
-| 2026-05-28 | Browser | Yes | Pending fuller retest | Pending fuller retest | Yes | PASS / FIXED | After delegated click handler and cache-busted script update, Gerry reported Spin fixed. |
+| 2026-05-28 | Browser | Yes | Yes | Yes | Yes | PASS / FIXED | After delegated click handler and cache-busted script update, Gerry reported Spin fixed and Reset passed. |
 
 ## Search Test Record
 
