@@ -51,7 +51,13 @@ const searchPages = [
     title: 'Reviews Hub',
     url: 'reviews.html',
     summary: 'Review status labels, comparison criteria, and future partner review rules.',
-    keywords: 'reviews casino social casino partner status approved pending paused removed'
+    keywords: 'reviews casino social casino partner status approved pending paused removed checklist'
+  },
+  {
+    title: 'Online Casino Review Checklist',
+    url: 'online-casino-review-checklist.html',
+    summary: 'Use a plain-English checklist before signing up anywhere: age rules, location rules, terms, bonus clarity, support, and safer-play tools.',
+    keywords: 'online casino review checklist legal casino checklist social casino checklist age rules location rules bonus terms support safer play disclosure'
   },
   {
     title: 'How We Review',
@@ -173,7 +179,7 @@ function renderResults() {
     const title = document.createElement('h3');
     title.textContent = 'Try a simpler search';
     const text = document.createElement('p');
-    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, bonuses, social casinos, sweepstakes, reviews, contact, or responsible play.';
+    text.textContent = 'Try words like free slots, no download slots, free spins, slot terms, bonuses, social casinos, sweepstakes, reviews, checklist, contact, or responsible play.';
     empty.appendChild(title);
     empty.appendChild(text);
     searchResults.appendChild(empty);
