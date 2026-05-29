@@ -17,9 +17,9 @@ The first live game check found that the Spin button was not working. The game s
 
 Reset also passed after the fix.
 
-Social search passed. Search terms `slots` and `bonus` remain pending.
+Search passed for `social`, `bonus`, and `slots`.
 
-A fuller mobile, desktop, search, and trust-page QA pass is still required before public promotion, affiliate follow-up, or monetization.
+A fuller mobile, desktop, and trust-page QA pass is still required before public promotion, affiliate follow-up, or monetization.
 
 ## Do Not Add During QA
 
@@ -72,8 +72,8 @@ Check these pages first:
 
 | Date | Search Term | Expected Result | Actual Result | Pass/Fail | Notes |
 |---|---|---|---|---|---|
-|  | slots | Free slots / play page |  | Pending |  |
-|  | bonus | Bonus / free spins pages |  | Pending |  |
+| 2026-05-28 | slots | Free slots / play page | Play Free Slots; Free Slots Guide; No Download Slots; Best Free Slots for Beginners; related trust pages | PASS | Results were relevant and included the main slot pages. |
+| 2026-05-28 | bonus | Bonus / free spins pages | Slot Terms Explained; Casino Bonus Terms Explained; Bonuses Explained | PASS | Results were relevant and included casino bonus terms and bonuses pages. |
 | 2026-05-28 | social | Social casino / sweepstakes pages | Reviews Hub; What Are Social Casinos? | PASS | Results were relevant and included the social casino explainer. |
 
 ## Trust / Legal Test Record
@@ -100,6 +100,6 @@ Do not promote or follow up aggressively with partners until:
 
 ## Next Step
 
-Test search terms `slots` and `bonus`.
+Check trust/legal pages: Contact, Privacy, Terms, Disclosure, and Responsible Play.
 
 Continue `VISUAL-QA-CHECKLIST.md` in a real browser and record results here.
