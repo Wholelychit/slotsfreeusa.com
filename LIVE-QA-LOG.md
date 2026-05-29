@@ -11,9 +11,9 @@ This log is separate from `VISUAL-QA-CHECKLIST.md`.
 
 ## Current Status
 
-Live QA is pending.
+Initial live browser check passed for the main domain and five checked pages.
 
-The codebase passed the non-visual repo audit, and the visual QA checklist exists. A human browser/mobile pass is still required before public promotion, affiliate follow-up, or monetization.
+A fuller mobile, desktop, game, search, and trust-page QA pass is still required before public promotion, affiliate follow-up, or monetization.
 
 ## Do Not Add During QA
 
@@ -33,6 +33,7 @@ QA should test the current public site only.
 
 | Date | Tester | Environment | Pages Checked | Result | Notes |
 |---|---|---|---|---|---|
+| 2026-05-28 | Gerry | Browser | `https://slotsfreeusa.com/` plus five checked pages | PASS | Main domain loaded. Gerry reported all five checked pages passed. |
 |  |  | Mobile 360-390px |  | Pending |  |
 |  |  | Mobile 414-430px |  | Pending |  |
 |  |  | Tablet 768px |  | Pending |  |
@@ -92,4 +93,4 @@ Do not promote or follow up aggressively with partners until:
 
 ## Next Step
 
-Run `VISUAL-QA-CHECKLIST.md` in a real browser and record results here.
+Continue `VISUAL-QA-CHECKLIST.md` in a real browser and record results here.
